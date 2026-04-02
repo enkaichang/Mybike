@@ -1,0 +1,1183 @@
+--------- beginning of main
+03-29 18:48:47.593 25850 25850 W WWTimeBarController: isScrubbing: no active timebar
+03-29 18:48:47.593 25850 25850 W WWTimeBarController: isScrubbing: no active timebar
+03-29 18:48:47.593 25850 25850 W WWTimeBarController: getDisplayCurrentTimeMillis: no active timebar
+--------- beginning of system
+03-29 18:48:47.829  1580  4685 W ActivityTaskManager: callingPackage for (uid=2000, pid=28091) has no WPC
+03-29 18:48:47.837  1580  4685 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@291ff389 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-29 18:48:47.847  1580  4685 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{822e455 #1359 type=standard A=10385:com.example.mybike} activity=ActivityRecord{21152524 u0 com.example.mybike/.MainActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@207986865 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@207986865 skip-bounds-fullscreen
+03-29 18:48:47.847  1580  4685 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.example.mybike/.MainActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_PERMISSION) result code=0
+03-29 18:48:47.848  2133  2159 V WindowManagerShell: Transition requested (#13103): android.os.BinderProxy@6ed9bd5 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=1359 effectiveUid=10385 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.example.mybike/.MainActivity } baseActivity=ComponentInfo{com.example.mybike/com.example.mybike.MainActivity} topActivity=ComponentInfo{com.example.mybike/com.example.mybike.MainActivity} origActivity=null realActivity=ComponentInfo{com.example.mybike/com.example.mybike.MainActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=1389940186 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@4646fea} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 152 - 0, 0) topActivityInfo=ActivityInfo{1d922db com.example.mybike.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2424) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 13103 }
+03-29 18:48:47.848  2133  2159 W DisplayDisconnectTransitionHandler: No disconnect change found in the transition, not handling request.
+03-29 18:48:47.848  2133  2159 D ShellSplitScreen: logExit: no-op, mLoggerSessionId is null
+03-29 18:48:47.849  1580  1674 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@291ff389 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-29 18:48:47.850  1580  1674 D CompatChangeReporter: Compat change id reported: 441041342; UID 10385; state: ENABLED
+03-29 18:48:47.850  2133  2159 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=triggerTask's display doesn't support desktop mode
+03-29 18:48:47.850  2480  2480 D RecentsView: onTaskDisplayChanged: 1359, new displayId = 0
+03-29 18:48:47.851   501   560 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4000074d474f1e0) with descriptor: '(not cached)'
+03-29 18:48:47.852  2133  2159 D Bubbles : BubbleTaskStackListener.onTaskMovedToFront(): taskId=1359
+03-29 18:48:47.853  2480  2480 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+03-29 18:48:47.853  2133  2159 D ShellDesktopMode: DesktopRepository: Removes freeform task: taskId=1358
+03-29 18:48:47.853  2133  2159 W ShellDesktopMode: DesktopRepository: No display id found for task: taskId=1358
+03-29 18:48:47.853  2480  2480 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+03-29 18:48:47.853  1580  1919 D CompatChangeReporter: Compat change id reported: 377864165; UID 10385; state: ENABLED
+03-29 18:48:47.853  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:48:47.856  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:48:47.857  5976  5976 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+03-29 18:48:47.857  5976  5976 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+03-29 18:48:47.862   971   971 D Zygote  : Forked child process 28095
+03-29 18:48:47.863  1580  1694 I ActivityManager: Start proc 28095:com.example.mybike/u0a385 for next-top-activity {com.example.mybike/com.example.mybike.MainActivity}
+03-29 18:48:47.866 25850 25850 E YT.mlplayer: MedialibPlayer.stopVideo(), STOPPAGE_RELEASE_VIDEO
+03-29 18:48:47.866 25850 25850 E YT.mlplayer: MedialibPlayerEvents[46].onStopped()
+03-29 18:48:47.867   501   621 D SurfaceFlinger: setDesiredMode 4619827677550801152 {mode={fps=120.00 Hz, modePtr={id=1, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=false, force=false}
+03-29 18:48:47.869  1580  4636 D MediaSessionService: onSessionPlaybackStateChanged: record=com.google.android.youtube/YouTube playerlib/571 (userId=0) playbackState=PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=1389940208, actions=8192, custom actions=[], active item id=-1, error=null}
+03-29 18:48:47.869 25850 25925 D MediaCodec: keep callback message for reclaim
+03-29 18:48:47.869 25850 28034 D CCodecBufferChannel: [c2.google.av1.decoder#769] Discard frames from previous generation.
+03-29 18:48:47.869 25850 28033 I CCodecConfig: query failed after returning 18 values (BAD_INDEX)
+03-29 18:48:47.869 25850 25850 W YTPL.mediasession: MediaSession setActive(false)
+03-29 18:48:47.869  1580  1674 I DisplayDeviceRepository: Display device changed render timings: "內建畫面", renderFrameRate=120.00001, presentationDeadlineNanos=11500000, appVsyncOffsetNanos=6233332, frameRateOverrides=[]
+03-29 18:48:47.869  1580  1919 D MediaSessionService: onSessionPlaybackStateChanged: record=com.google.android.youtube/YouTube playerlib/571 (userId=0) playbackState=PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=1389940209, actions=8192, custom actions=[], active item id=-1, error=null}
+03-29 18:48:47.870  2322  2322 W MediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube tried to update with no new data
+03-29 18:48:47.870 25850 25850 E YT.mlplayer: MedialibPlayer.stopVideo(), STOPPAGE_DIRECTOR_RESET_INTERNALLY
+03-29 18:48:47.870 25850 25850 E YT.mlplayer: MedialibPlayer.clearVideoFrame()
+03-29 18:48:47.870 25850 25850 E YT.mlplayer: MedialibPlayer.clearQueue()
+03-29 18:48:47.870  1580  1672 D WindowManager: DeferredDisplayUpdater: partially applying DisplayInfo(1080 x 2424) immediately
+03-29 18:48:47.870 25850 25850 E YT.mlplayer: MedialibPlayer.stopVideo(), STOPPAGE_DIRECTOR_RESET_INTERNALLY
+03-29 18:48:47.870  1060  8117 D DeviceHalAidl: [default] setParameters: parameters: "screen_state=on"
+03-29 18:48:47.870   988 23726 D ASvc::Module: updateScreenState: 1
+03-29 18:48:47.871  2322  2322 W MediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube tried to update with no new data
+03-29 18:48:47.871  1060  8117 D DeviceHalAidl: [r_submix] setParameters: parameters: "screen_state=on"
+03-29 18:48:47.871   988  1644 D AHAL_Module: updateScreenState: r_submix: 1
+03-29 18:48:47.871  1060  8117 D DeviceHalAidl: [bluetooth] setParameters: parameters: "screen_state=on"
+03-29 18:48:47.871   988 23726 D AHAL_Module: updateScreenState: bluetooth: 1
+03-29 18:48:47.871  1580  4689 E AppOps  : attributionTag  not declared in manifest of com.google.android.youtube
+03-29 18:48:47.871 28095 28095 I Zygote  : Process 28095 created for com.example.mybike
+03-29 18:48:47.871  1580  4685 E AppOps  : attributionTag  not declared in manifest of com.google.android.youtube
+03-29 18:48:47.871 28095 28095 I .example.mybike: Late-enabling -Xcheck:jni
+03-29 18:48:47.873 25850 25930 E YT.qoe  : Pinging https://s.youtube.com/api/stats/qoe?cl=888797881&ei=uALJacjxOterpt8PhYzc2Aw&el=homepage&event=streamingstats&feature=g-high&ns=yt&plid=AAZOJ23L1dqW_X_b&stmp=vb%3A1&cpn=eHfowQCww2D6ZBYw&cplatform=mobile&cbr=com.google.android.youtube&cff=SMALL_FORM_FACTOR&c=android&cmodel=Pixel%209a&cos=Android&soc=Google%3ATensor%20G4&csdk=36&cbrver=21.12.524&cver=21.12.524&cosver=16&cbrand=Google&qclc=ChBlSGZvd1FDd3cyRDZaQll3GgCqAQA&vfs=0.023:788:::a:sms.3_1&df=0.023:0,5.213:9,10.362:1,11.688:1&conn=11.692:3&cplayer=PLATYPUS&bh=5.206:7.59,5.280:12.52,10.359:7.60,10.401:12.52,11.692:11.65&cache_bytes=0.023:129765,5.206:1111063&cmt=5.206:4.866,5.280:0.000,10.359:4.969,10.401:0.000,11.692:0.947&mst=0.006:2344&afs=0.023:251;CggKA2RyYxIBMQ::i:sms.3_1;fl.-16.99;tl.-14.0;vg.0.0;nm.1&is_offline=0.006:0&sur=0.006:1,0.353:3&view=0.023:497:746&bat=11.692:0.680:1&rate=0.012:1.0&cat=sabr&vps=0.011:B,0.023:S,0.025:PL,5.206:S:ss.103_5.205,5.280:PL,10.359:S:ss.103_10.358,10.401:PL,11.692:N:sr.13&user_intent=0.005&ctmp=pcmp:u,ctype:rt.0.006;ytm,mem:tot.86;max.512;free.60;heap.108;hpall.86;hpfree.17,poa:n,vnorm:rt.0.012;rng.0.0;trkcfg.-17.38;tarcfg.Optional%5B-14.0%5D;mode.TRACK;tar.-14.0;pre.-17.38;ang.0.0;inpvol.0.0;mult.1.0;outvol.0.0,mlat:rt.0.012;loadVideo.6404,llv:6,vc:i.6,flags:2,vnorm:rt.0.018;rng.0.0;trkcfg.-17.38;tarcfg.Optional%5B-14.0%5D;mode.TRACK;tar.-14.0;pre.-17.38;ang.0.0;inpvol.0.0;mult.1.0;outvol.0.0,mime_fb:rt.0.009;1,pmqs:dt.324519;lmq.2160;dir.1,vnorm:rt.0.022;rng.0.0;trkcfg.-17.38;tarcfg.Optional%5B-14.0%5D;trkfmt.-16.99;mode.TRACK;tar.-14.0;pre.-16.99;ang.0.0;inpvol.0.0;mult.1.0;outvol.0.0,cir:rt.0.398;reused.false;reason.CODEC_INIT_REASON_BACKGROUND,dec:c2.google.av1.decoder,bh0:tr1.19.270;tr2.11.869,mlat:rt.11.688;stopVideo.1833,api:rt.11.690;clearQ&spatial=0.006:0:0&seq=2&aur=0.026:5&docid=(scrubbed) 
+03-29 18:48:47.873 25850 25930 E YT.qoe  : &fexp=
+03-29 18:48:47.873 25850 25850 E YT.mlplayer: MedialibPlayer.stopVideo(), STOPPAGE_DIRECTOR_RESET_INTERNALLY
+03-29 18:48:47.873   988 23726 I ASvc::AudioExtension: getDcHandler
+03-29 18:48:47.874 25850 25925 D MediaCodec: keep callback message for reclaim
+03-29 18:48:47.875   988 23726 I ASvc::DcHandler: setIsAnyPlaybackActive: false
+03-29 18:48:47.875  2322  2322 W MediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube tried to update with no new data
+03-29 18:48:47.875 25850 28033 I CCodecConfig: query failed after returning 18 values (BAD_INDEX)
+03-29 18:48:47.876 22124 22262 I AiAiAdaptiveAudio: (REDACTED) updateState: enabledInSettings=%b, playbackState=%s
+03-29 18:48:47.876 22124 22262 I AiAiAdaptiveAudio: stopMonitoring
+03-29 18:48:47.876 22124 22262 I AiAiAdaptiveAudio: (REDACTED) Updating calibration state: %s -> %s
+03-29 18:48:47.876  2322  2322 W MediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube tried to update with no new data
+03-29 18:48:47.880  2133  3032 V WindowManagerShell: onTransitionReady(transaction=6786049798169)
+03-29 18:48:47.881  2133  2159 V WindowManagerShell: onTransitionReady (#13103) android.os.BinderProxy@6ed9bd5: {id=13103 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+03-29 18:48:47.881  2133  2159 V WindowManagerShell:         {m=OPEN f=NONE leash=Surface(name=Task=1359#136429)/@0x9872925 sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1 userId=0},
+03-29 18:48:47.881  2133  2159 V WindowManagerShell:         {m=TO_BACK f=NONE leash=Surface(name=Task=1341#135419)/@0x4b3fafa sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1 userId=0}
+03-29 18:48:47.881  2133  2159 V WindowManagerShell:     ]}
+03-29 18:48:47.881  2133  2159 V ShellDesktopMode: DesktopModeLogger: taskInfo map after processing changes 0
+03-29 18:48:47.881  2133  2159 D ShellDesktopMode: DesktopTaskChangeListener: onTaskMovingToBack for taskId=1341, displayId=0 - desktop not supported
+03-29 18:48:47.881  2133  2159 D ShellDesktopMode: DesktopTaskChangeListener: onTaskOpening for taskId=1359, displayId=0 userId=0 currentUserId=0 parentTaskId=-1 isFreeform=false isActive=false isPinned=false
+03-29 18:48:47.881  2133  2159 D ShellDesktopMode: DesktopTaskChangeListener: onTaskOpening for taskId=1359, displayId=0 - desktop not supported
+03-29 18:48:47.881  2133  2159 V WindowManagerShell: Playing animation for (#13103) android.os.BinderProxy@6ed9bd5@0
+03-29 18:48:47.881  2133  2159 D ShellSplitScreen: startAnimation: transition=13103 isSplitActive=false
+03-29 18:48:47.881  2133  2159 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+03-29 18:48:47.881  2133  2159 V ShellDesktopMode: DesktopMixedTransitionHandler: No pending desktop transition
+03-29 18:48:47.881  2133  2159 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=13103 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=1359#136429)/@0x9872925 sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=NONE leash=Surface(name=Task=1341#135419)/@0x4b3fafa sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1 userId=0}]}
+03-29 18:48:47.881  2133  2159 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@25e01fa windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@7fd33ab, appThread = android.app.IApplicationThread$Stub$Proxy@dcf4a08, debugName = overlayBackTransition, filter = null }}
+03-29 18:48:47.881  2133  2159 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@40125a1, appThread = android.app.IApplicationThread$Stub$Proxy@97a43c6, debugName = LauncherToDream, filter = null }}
+03-29 18:48:47.881  2133  2159 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@ad95f87, appThread = android.app.IApplicationThread$Stub$Proxy@312feb4, debugName = QuickstepDisplayMove, filter = null }}
+03-29 18:48:47.881  2133  2159 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@be97add, appThread = android.app.IApplicationThread$Stub$Proxy@9c6d652, debugName = QuickstepLaunchHome, filter = null }}
+03-29 18:48:47.881  2133  2159 V WindowManagerShell:  Checking filter Pair{{types=[OPEN,TO_FRONT] flags=0x0] notFlags=0x0 checks=[{atype=standard independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=freeform isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@d439aad, appThread = null, debugName = DesktopWindowLimitUnminimize, filter = null }}
+03-29 18:48:47.881  2133  2159 V WindowManagerShell:  Delegate animation for (#13103) to null
+03-29 18:48:47.881  2133  2159 V WindowManagerShell: start default transition animation, info = {id=13103 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=1359#136429)/@0x9872925 sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=NONE leash=Surface(name=Task=1341#135419)/@0x4b3fafa sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1 userId=0}]}
+03-29 18:48:47.881  2133  2159 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@5db487 animAttr=0x9 type=OPEN isEntrance=false
+03-29 18:48:47.882 25850 25850 W WWTimeBarController: setScrubbing: no active timebar
+03-29 18:48:47.883 25850 25850 W WWTimeBarController: setScrubbing: no active timebar
+03-29 18:48:47.883 25850 25850 W WWTimeBarController: setScrubbing: no active timebar
+03-29 18:48:47.884   501   501 D SurfaceFlinger: initiateModeChange 4619827677550801152 {mode={fps=120.00 Hz, modePtr={id=1, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=false, force=false}
+03-29 18:48:47.885 25203 25203 I ForwardBroadcastListene: Receive forward intent: com.google.android.apps.pixel.dcservice.monitor.ACTION_MONITOR_MEDIA_PLAYBACK_STOPPED
+03-29 18:48:47.885 25203 25203 I PowerSavingModeHandler: onReceive ACTION_MONITOR_MEDIA_PLAYBACK_STOPPED
+03-29 18:48:47.885 25850 25850 W YTPL.mediasession: MediaSession setActive(false)
+03-29 18:48:47.885  1580  4833 D MediaSessionService: onSessionPlaybackStateChanged: record=com.google.android.youtube/YouTube playerlib/571 (userId=0) playbackState=PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=1389940225, actions=8192, custom actions=[], active item id=-1, error=null}
+03-29 18:48:47.886  2322  2322 W MediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube tried to update with no new data
+03-29 18:48:47.886 25203 25262 I PowerSavingModeHandler: shouldSwitchCodecToLowPower, isPowerSaveMode=false
+03-29 18:48:47.886  2322  2322 W MediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube tried to update with no new data
+03-29 18:48:47.886   505 16953 D hwc-display: setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+03-29 18:48:47.886  1580  1671 V WindowManager: Sent Transition (#13103) createdAt=03-29 18:48:47.839 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=1359 effectiveUid=10385 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.example.mybike/.MainActivity } baseActivity=ComponentInfo{com.example.mybike/com.example.mybike.MainActivity} topActivity=ComponentInfo{com.example.mybike/com.example.mybike.MainActivity} origActivity=null realActivity=ComponentInfo{com.example.mybike/com.example.mybike.MainActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=1389940186 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{f068f7d Task{822e455 #1359 type=standard A=10385:com.example.mybike}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 152 - 0, 0) topActivityInfo=ActivityInfo{d315e72 com.example.mybike.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2424) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 13103 }
+03-29 18:48:47.886  1580  1671 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+03-29 18:48:47.886  1580  1671 V WindowManager:     info={id=13103 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+03-29 18:48:47.886  1580  1671 V WindowManager:         {WCT{RemoteToken{f068f7d Task{822e455 #1359 type=standard A=10385:com.example.mybike}}} m=OPEN f=NONE leash=Surface(name=Task=1359#136429)/@0x2ec261a sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1 userId=0},
+03-29 18:48:47.886  1580  1671 V WindowManager:         {WCT{RemoteToken{f65c8ce Task{119aacc #1341 type=standard A=10198:com.google.android.youtube}}} m=TO_BACK f=NONE leash=Surface(name=Task=1341#135419)/@0x69dc682 sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1 userId=0}
+03-29 18:48:47.886  1580  1671 V WindowManager:     ]}
+03-29 18:48:47.886 25850 25850 D BufferQueueProducer: About to force-disconnect API_MEDIA, mode=1
+03-29 18:48:47.886   505 16953 I hwc-display: [PrimaryDisplay] setActiveConfigWithConstraints: config(37)
+03-29 18:48:47.888 25203 25262 I PowerSavingModeHandler: maybeSwitchCodecForLeavingLowPower, no configured device
+03-29 18:48:47.889  2133  2159 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@efcae9e animAttr=0x8 type=OPEN isEntrance=true
+03-29 18:48:47.890  2133  2159 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@6a81ffb
+03-29 18:48:47.890  2133  2159 V ShellTaskOrganizer: Task appeared taskId=1359 listener=FullscreenTaskListener
+03-29 18:48:47.890  2133  2159 V ShellTaskOrganizer: Fullscreen Task Appeared: #1359
+03-29 18:48:47.891  2480  2480 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+03-29 18:48:47.891 25203 25262 I PowerSavingModeHandler: maybeSwitchCodec completed
+03-29 18:48:47.898 25850 28033 D SurfaceUtils: connecting to surface 0xb400007652d51e80, reason connectToSurface
+03-29 18:48:47.899 25850 28033 I MediaCodec: [c2.google.av1.decoder] setting surface generation to 26470413
+03-29 18:48:47.899 25850 28033 D SurfaceUtils: disconnecting from surface 0xb400007652d51e80, reason connectToSurface(reconnect)
+03-29 18:48:47.899 25850 28033 D SurfaceUtils: connecting to surface 0xb400007652d51e70, reason connectToSurface(reconnect-with-listener)
+03-29 18:48:47.899 25850 28033 D GraphicsTracker: new surface in configuration: maxDequeueRequested(0), maxDequeueCommitted(19)
+03-29 18:48:47.899 25850 28033 D GraphicsTracker: new surface configured with id:111024904601616 gen:26470413 maxDequeue:19
+03-29 18:48:47.899 25850 28033 D GraphicsTracker: maxDequeueCount is already 19
+03-29 18:48:47.899 25850 28033 D Codec2Client: setOutputSurface -- generation=26470413 consumer usage=0x900
+03-29 18:48:47.899 25850 28033 D SurfaceUtils: disconnecting from surface 0xb400007652c63510, reason disconnectFromSurface
+03-29 18:48:47.899 25850 28033 E BufferQueueProducer: [7cea184 SurfaceView[com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity]#7(BLAST Consumer)7](id:64fa0000000f,api:0,p:-1,c:25850) disconnect: not connected (req=3)
+03-29 18:48:47.899 25850 28033 E Surface : [7cea184 SurfaceView[com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity]#7(BLAST Consumer)7](id:64fa0000000f) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+03-29 18:48:47.899 25850 28033 E SurfaceUtils: Failed to disconnect from surface 0xb400007652c63510, err -19
+03-29 18:48:47.899 25850 28033 W MediaCodec: nativeWindowDisconnect returned an error: No such device (-19)
+03-29 18:48:47.904  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3186: USF: TMD3733: vsync_delay_usec: 5800
+03-29 18:48:47.909  5976 27978 D AdvertisingIdClient: AdvertisingIdClient already created.
+03-29 18:48:47.910  5976 27978 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+03-29 18:48:47.911  5976 27978 D AdvertisingIdClient: AdvertisingIdClient is bounded
+03-29 18:48:47.912  5976 27978 I AdvertisingIdClient: shouldSendLog 1388972603
+03-29 18:48:47.912  5976 27978 I AdvertisingIdClient: GetInfoInternal elapse 3ms
+03-29 18:48:47.918  4987  4987 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+03-29 18:48:47.919  4987  4987 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+03-29 18:48:47.922 28095 28095 I .example.mybike: Using CollectorTypeCMC GC.
+03-29 18:48:47.925  1269  1349 I adbd    : jdwp connection from 28095
+03-29 18:48:47.928 28095 28095 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+03-29 18:48:47.935  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:48:47.948  1580  4685 W JobScheduler: Job didn't exist in JobStore: 13217f0 #u0a121/-638764459 com.google.android.as.oss/com.google.android.gms.learning.internal.training.InAppJobService
+03-29 18:48:47.953  2480  2480 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+03-29 18:48:48.065   988 23726 D AHal::UseCase: SetActiveTracks: update deep-buffer-playback active tracks(0)
+03-29 18:48:48.066   988 23726 I AHal::Waves::CustomAction: GetData: Custom Data: {2,0,1,0,}
+03-29 18:48:48.066   988 23726 D AHal::ThirdPartyEffectAmcs: UpdateAMCSData: update volume index[0] duration 11812 ms.
+03-29 18:48:48.066   988 23726 I AHal::Waves: UpdateTuning: update amcs instance id = Speaker, active_ms_in_vol_range = {11812,0,0,0,0,0,0,0,0,0}
+03-29 18:48:48.066   988 23726 D AHal::Waves: UpdateTuning: update Device: speaker, InstanceId: 1, IsInitialize: true, NeedToUpdate: true, Parameters{is_bypass:false, MaxVolume: 0.0100232, ScreenOrientation: 0}, is_any_active_track_on_sink: false
+03-29 18:48:48.066   988 23726 D BTAudioSessionAidl: GetSupportedLatencyModes - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+03-29 18:48:48.066   988 23726 D BTAudioSessionAidl: SetLatencyMode - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+03-29 18:48:48.066   988 23726 D BTAudioSessionAidl: GetSupportedLatencyModes - SessionType=A2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+03-29 18:48:48.066   988 23726 D BTAudioSessionAidl: SetLatencyMode - SessionType=A2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+03-29 18:48:48.066  1060  1649 W AudioFlinger: moveEffectChain_ll: effect chain for session 0 not on source thread 0xb400006fe6b0dfe8
+03-29 18:48:48.163 28095 28095 D nativeloader: Configuring clns-9 for other apk /data/app/~~6wIMJnzc9gcGF-2TiFn6iQ==/com.example.mybike-vBJfT3Y3k4KEv6JCRiXoow==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~6wIMJnzc9gcGF-2TiFn6iQ==/com.example.mybike-vBJfT3Y3k4KEv6JCRiXoow==/lib/arm64:/data/app/~~6wIMJnzc9gcGF-2TiFn6iQ==/com.example.mybike-vBJfT3Y3k4KEv6JCRiXoow==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.example.mybike
+03-29 18:48:48.168 28095 28095 V GraphicsEnvironment: Currently set values for:
+03-29 18:48:48.168 28095 28095 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+03-29 18:48:48.168 28095 28095 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+03-29 18:48:48.168 28095 28095 V GraphicsEnvironment: com.example.mybike is not listed in per-application setting
+03-29 18:48:48.168 28095 28095 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+03-29 18:48:48.168 28095 28095 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+03-29 18:48:48.180  1580  1937 W AlarmManager: Unrecognized alarm listener com.android.server.usage.AppTimeLimitController$SessionUsageGroup@946e088
+03-29 18:48:48.181  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:48:48.181  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:48:48.182 28095 28113 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+03-29 18:48:48.182  9587  9587 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB-MINUS-CHARGER:-5832 VIRTUAL-USB-THROTTLING:0 charging_therm:39251 usb_pwr_therm:33419 
+03-29 18:48:48.183  9587  9587 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC:35.6008 raw data: VIRTUAL-SKIN-CHARGE-WLC:35600.8 charging_therm:39251 soc_therm:40520 usb_pwr_therm:33419 
+03-29 18:48:48.183  9587  9587 I pixel-thermal: quiet_therm:37.337 raw data: quiet_therm:37337 
+03-29 18:48:48.183 28095 28113 D vulkan  : searching for layers in '/data/app/~~6wIMJnzc9gcGF-2TiFn6iQ==/com.example.mybike-vBJfT3Y3k4KEv6JCRiXoow==/lib/arm64'
+03-29 18:48:48.183 28095 28113 D vulkan  : searching for layers in '/data/app/~~6wIMJnzc9gcGF-2TiFn6iQ==/com.example.mybike-vBJfT3Y3k4KEv6JCRiXoow==/base.apk!/lib/arm64-v8a'
+03-29 18:48:48.183  9587  9587 I pixel-thermal: VIRTUAL-SKIN-CHARGE:35.6044 raw data: VIRTUAL-SKIN-CHARGE:35604.4 VIRTUAL-SKIN-CHARGE-SUB-0:35293.7 VIRTUAL-SKIN-CHARGE-SUB-1:35604.4 btmspkr_therm:33397 charging_therm:39251 disp_therm:33731 north_therm:37849 quiet_therm:37337 rfpa_therm:37582 soc_therm:40520 usb_pwr_therm:33419 
+03-29 18:48:48.183  9587  9587 I pixel-thermal: usb_pwr_therm:33.419 raw data: usb_pwr_therm:33419 
+03-29 18:48:48.184  9587  9587 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_input: [35200.00 33397.00 39251.00 33731.00 37849.00 37337.00 37582.00 40520.00 33419.00 ]
+03-29 18:48:48.184  9587  9587 I native  : I0000 00:00:1774781328.184281    9587 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:48:48.184  9587  9587 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_output: [33982.3 ]
+03-29 18:48:48.184  9587  9587 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: predicted_value: [33982.3 ]
+03-29 18:48:48.185  9587  9587 I pixel-thermal: cellular-emergency:35.5692 raw data: VIRTUAL-SKIN:35569.2 VIRTUAL-SKIN-LEGACY:36078.6 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:436.652 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:35641.9 VIRTUAL-SKIN-MODEL-CLAMPED:35641.9 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-436.652 VIRTUAL-SKIN-MODEL-UPDATED:35569.2 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:35641.9 VIRTUAL-SKIN-SUB-0:35386.5 VIRTUAL-SKIN-SUB-1:35370 VIRTUAL-SKIN-SUB-2:36033.9 VIRTUAL-SKIN-SUB-3:36078.6 VIRTUAL-SKIN-SUB-4:35098.7 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery:35200 btmspkr_therm:33397 cellular-emergency:35569.2 charging_therm:39251 disp_therm:33731 north_therm:37849 quiet_therm:37337 rfpa_therm:37582 soc_therm:40520 usb_pwr_therm:33419 
+03-29 18:48:48.185  9587  9587 I pixel-thermal: VIRTUAL-SKIN-SPEAKER:33.7268 raw data: VIRTUAL-SKIN-SPEAKER:33726.8 VIRTUAL-SKIN-SPEAKER-MODEL:33982.3 
+03-29 18:48:48.185  9587  9587 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_input: [37582.00 37337.00 39251.00 33419.00 33397.00 33731.00 37849.00 40520.00 35200.00 1357.94 10.03 347.82 47.56 2.61 101.93 ]
+03-29 18:48:48.185  9587  9587 I native  : I0000 00:00:1774781328.185250    9587 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:48:48.185  1580  1672 W AppWarnings: Showing PageSizeMismatchDialog for package com.example.mybike
+03-29 18:48:48.185  9587  9587 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_output: [34126.1 ]
+03-29 18:48:48.185  9587  9587 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: predicted_value: [34126.1 ]
+03-29 18:48:48.185  9587  9587 I pixel-thermal: btmspkr_therm:33.397 raw data: btmspkr_therm:33397 
+03-29 18:48:48.185  9587  9587 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:48:48.185  9587  9587 I pixel-thermal: VIRTUAL-SKIN:35.5692 raw data: VIRTUAL-SKIN:35569.2 
+03-29 18:48:48.185  9587  9587 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:48:48.185  9587  9587 I pixel-thermal: VIRTUAL-SKIN-DISPLAY:35.5692 raw data: VIRTUAL-SKIN:35569.2 VIRTUAL-SKIN-DISPLAY:35569.2 
+03-29 18:48:48.185  9587  9587 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB-MINUS-CHARGER:-5832 VIRTUAL-USB-UI:0 usb_pwr_therm:33419 
+03-29 18:48:48.185  9587  9587 I pixel-thermal: rfpa_therm:37.582 raw data: rfpa_therm:37582 
+03-29 18:48:48.185  9587  9587 I pixel-thermal: battery:35.2 raw data: battery:35200 
+03-29 18:48:48.186  9587  9587 I pixel-thermal: north_therm:37.849 raw data: north_therm:37849 
+03-29 18:48:48.186  9587  9587 I pixel-thermal: charging_therm:39.251 raw data: charging_therm:39251 
+03-29 18:48:48.186  9587  9587 I pixel-thermal: disp_therm:33.731 raw data: disp_therm:33731 
+03-29 18:48:48.186  9587  9587 I pixel-thermal: soc_therm:40.52 raw data: soc_therm:40520 
+03-29 18:48:48.187 28095 28095 D DesktopExperienceFlags: Toggle override initialized to: false
+03-29 18:48:48.190  1580  1672 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Dialog$$ExternalSyntheticLambda2@c10a294
+03-29 18:48:48.191  1580  1672 D CoreBackPreview: Window{363c6c9 u0 android}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.WindowOnBackInvokedDispatcher$OnBackInvokedCallbackWrapper@716813d, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+03-29 18:48:48.204 28095 28095 D nativeloader: Load /data/app/~~6wIMJnzc9gcGF-2TiFn6iQ==/com.example.mybike-vBJfT3Y3k4KEv6JCRiXoow==/base.apk!/lib/arm64-v8a/libmaplibre.so using class loader ns clns-9 (caller=/data/app/~~6wIMJnzc9gcGF-2TiFn6iQ==/com.example.mybike-vBJfT3Y3k4KEv6JCRiXoow==/base.apk!classes5.dex): ok
+03-29 18:48:48.218 28095 28095 D CompatChangeReporter: Compat change id reported: 377864165; UID 10385; state: ENABLED
+03-29 18:48:48.218 28095 28095 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+03-29 18:48:48.260 28095 28095 I ContentCaptureHelper: Setting logging level to OFF
+03-29 18:48:48.266  1254  1254 D AOC     : F1:MSG: controller.cc, 275: AudioOutCtrl: cmd ID: 0x00d3, tag: 0xdf [cntr = 56465]
+03-29 18:48:48.266  1254  1254 D AOC     : F1:Prot: get left re: 0x2ecaec
+03-29 18:48:48.267   988  1621 I AHal::Tas25xxHealth: GetImpedances: speaker [0] impedance: 5.84908 Ohms
+03-29 18:48:48.267  1254  1254 D AOC     : F1:MSG: controller.cc, 919: AudioOutCtrl: ipc: audio_output_tu, cmd ID: 0x00d3, tag: 0x43, rc: 0
+03-29 18:48:48.267   988  1621 I AHal::Tas25xxHealth: GetImpedances: speaker [1] impedance: 7.01178 Ohms
+03-29 18:48:48.267  1254  1254 D AOC     : F1:MSG: controller.cc, 275: AudioOutCtrl: cmd ID: 0x00d3, tag: 0xe0 [cntr = 56466]
+03-29 18:48:48.267  1254  1254 D AOC     : F1:Prot: get right re: 0x381821
+03-29 18:48:48.268   988  1621 I AHal::Tas25xxHealth: GetTemperatures: speaker [0] temperature: 26.189 Celsius
+03-29 18:48:48.268   988  1621 I AHal::Tas25xxHealth: GetTemperatures: speaker [1] temperature: 25.9404 Celsius
+03-29 18:48:48.270  1254  1254 D AOC     : F1:MSG: controller.cc, 919: AudioOutCtrl: ipc: audio_output_tu, cmd ID: 0x00d3, tag: 0x44, rc: 0
+03-29 18:48:48.270  1254  1254 D AOC     : F1:MSG: controller.cc, 275: AudioOutCtrl: cmd ID: 0x00d3, tag: 0xe1 [cntr = 56467]
+03-29 18:48:48.270  1254  1254 D AOC     : F1:Prot: get left temp: 0xd18326
+03-29 18:48:48.270  1254  1254 D AOC     : F1:MSG: controller.cc, 919: AudioOutCtrl: ipc: audio_output_tu, cmd ID: 0x00d3, tag: 0x45, rc: 0
+03-29 18:48:48.270  1254  1254 D AOC     : F1:MSG: controller.cc, 275: AudioOutCtrl: cmd ID: 0x00d3, tag: 0xe2 [cntr = 56468]
+03-29 18:48:48.270  1254  1254 D AOC     : F1:Prot: get right temp: 0xcf85f8
+03-29 18:48:48.271  1254  1254 D AOC     : F1:MSG: controller.cc, 919: AudioOutCtrl: ipc: audio_output_tu, cmd ID: 0x00d3, tag: 0x46, rc: 0
+03-29 18:48:48.279 28095 28095 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@e32f711
+03-29 18:48:48.279  1580  4764 D CoreBackPreview: Window{7d8faf4 u0 com.example.mybike/com.example.mybike.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@7241fde, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+03-29 18:48:48.331  9587  9598 I pixel-thermal: charging_therm:39.251 raw data: charging_therm:39251 
+03-29 18:48:48.331  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE:35.6044 raw data: VIRTUAL-SKIN-CHARGE:35604.4 
+03-29 18:48:48.332  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE power_budget=3928.63 err=2.39564 s_power=2527 time_elapsed_ms=7017 p=285.081 i=1302 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=185.452 (PARTIAL_SYSTEM_POWER: 1545.44 mW, cdev_weight: 0.120000)
+03-29 18:48:48.332  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC:35.6008 raw data: VIRTUAL-SKIN-CHARGE-WLC:35600.8 
+03-29 18:48:48.332  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC power_budget=3591.5 err=5.39925 s_power=1383 time_elapsed_ms=7017 p=1150.04 i=1383 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=324.542 (PARTIAL_SYSTEM_POWER: 1545.44 mW, cdev_weight: 0.210000)
+03-29 18:48:48.338 28095 28095 I .example.mybike: hiddenapi: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app, TargetSdkVersion=36) using reflection: allowed
+03-29 18:48:48.342 28095 28095 E VibratorInfo: Invalid frequency profile received from HAL. resonantFrequencyHz=161.10168, frequenciesHz=null, outputAccelerationsGs=null
+03-29 18:48:48.363 28095 28095 D VRI[MainActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,184,0,84] 
+03-29 18:48:48.376 28095 28095 I .example.mybike: hiddenapi: Accessing hidden field Landroid/graphics/Typeface;->sSystemFontMap:Ljava/util/Map; (runtime_flags=0, domain=platform, api=unsupported) from Lorg/maplibre/android/utils/FontUtils; (domain=app, TargetSdkVersion=36) using reflection: allowed
+03-29 18:48:48.397 28095 28142 I Mbgl-EGLConfigChooser: In emulator: false
+03-29 18:48:48.407  2133  2159 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#13103) android.os.BinderProxy@6ed9bd5@0
+03-29 18:48:48.410 25850 25850 D VRI[Shell$HomeActivity]: visibilityChanged oldVisibility=true newVisibility=false
+03-29 18:48:48.410  1580  1671 V WindowManager: Finish Transition (#13103): created at 03-29 18:48:47.839 collect-started=0.142ms request-sent=8.163ms started=11.729ms ready=37.788ms sent=39.162ms commit=22.427ms finished=571.232ms
+03-29 18:48:48.411  2133  2159 V WindowManagerShell: Track 0 became idle
+03-29 18:48:48.411  2133  2159 V WindowManagerShell: All active transition animations finished
+03-29 18:48:48.414  1580  2103 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+03-29 18:48:48.420 28095 28154 I Mbgl    : {GLThread 1876}[General]: GPU Identifier: Mali-G715
+03-29 18:48:48.422  9587  9598 I pixel-thermal: soc_therm:40.52 raw data: soc_therm:40520 
+03-29 18:48:48.422  1580  1671 I ActivityTaskManager: Displayed com.example.mybike/.MainActivity for user 0: +593ms
+03-29 18:48:48.424  1580  1946 D ActivityManager: freezing 27287 com.google.android.odad
+03-29 18:48:48.427  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:48.428  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:48.428  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10162} in 2ms
+03-29 18:48:48.449  1580  1671 D HintManagerService: Sent cleanup message for uid 10198
+03-29 18:48:48.453 25850 25850 E YT.mlplayer: MedialibPlayer.setForegroundMode(false)
+03-29 18:48:48.460 25850 25850 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@521e9ec
+03-29 18:48:48.460  1580  4764 D CoreBackPreview: Window{4b32f9d u0 com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6a19390, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+03-29 18:48:48.466 25850 25850 I AutofillManager: onInvisibleForAutofill(): expiringResponse
+03-29 18:48:48.469 25850 25850 E YT.mlplayer: MedialibPlayer.setMediaView(null)
+03-29 18:48:48.473  1021  1668 D usf_sensor_hal: accelerometer: Enter Batch. Period = 200000000, latency = 2000000000.
+03-29 18:48:48.474  1021  1668 D usf_sensor_hal: IMU temperature: Enter Batch. Period = 533334000, latency = 2000000000.
+03-29 18:48:48.475  1254  1254 D AOC     : A3:MSG: usf_sensor.cc, 2512: USF: Received reconfig sampling request for LSM6DSV Accelerometer.
+03-29 18:48:48.476  1254  1254 D AOC     : A3:MSG: usf_sensor.cc, 2512: USF: Received reconfig sampling request for LSM6DSV Temperature.
+03-29 18:48:48.477  1021  1740 I sensor-suez: Vendor atom [id = 100243] reported.
+03-29 18:48:48.486  4987 28072 I FusedLocation: (REDACTED) stationary throttling engaged @%s
+03-29 18:48:48.487  1021  1668 D usf_sensor_hal: rotation vector: Enter Batch. Period = 100000000, latency = 0.
+03-29 18:48:48.487  1021  1740 I sensor-suez: Vendor atom [id = 100243] reported.
+03-29 18:48:48.488  1021  1668 D usf_sensor_hal: rotation vector: Enter Activate. Enable = 1.
+03-29 18:48:48.488  1254  1254 D AOC     : A3:MSG: usf_sensor.cc, 1866: USF: Received start sampling request for Rotation Vector Sensor (active:1).
+03-29 18:48:48.489  1254  1254 D AOC     : A3:MSG: vsc_sensor.cc, 37: VSC: [Rotation Vector Sensor] enable: period 100000000, latency = 0
+03-29 18:48:48.489  1254  1254 D AOC     : A3:MSG: usf_vsc_log.cc, 69: VSC: {Fusion} configure fusion 11 100000us 0us.
+03-29 18:48:48.490  1254  1254 D AOC     : A3:MSG: usf_sensor.cc, 1866: USF: Received start sampling request for LSM6DSV Accelerometer (active:4).
+03-29 18:48:48.490  1254  1254 D AOC     : A3:MSG: usf_sensor.cc, 1866: USF: Received start sampling request for LSM6DSV Gyroscope (active:2).
+03-29 18:48:48.491  1254  1254 D AOC     : A3:MSG: lsm6dsv_device.cc, 732: USF: Lsm6dsvDevice: Sensor 1: Enabled 1, odr_index 7, period_ns 5000000.
+03-29 18:48:48.492  1254  1254 D AOC     : A3:MSG: lsm6dsv_fifo.cc, 755: USF: Lsm6dsvFifo: ODR: XL/G/T/TS: 60/240/15/30 WM: 1 Intr: 240.
+03-29 18:48:48.492  1254  1254 D AOC     : A3:MSG: lsm6dsv_device.cc, 641: USF: Lsm6dsvDevice: Fifo was disabled for 469075ns.
+03-29 18:48:48.492  1254  1254 D AOC     : A3:MSG: usf_sensor.cc, 1866: USF: Received start sampling request for MMC5616 Magnetometer (active:2).
+03-29 18:48:48.493  1254  1254 D AOC     : A3:MSG: mmc5616_device.cc, 448: USF: MMC56160: mmc5616_enable_measure odr = 50.
+03-29 18:48:48.493  4987  4987 W DiscoveryManager: BroadcastReceiver is already registered
+03-29 18:48:48.493  4987 27833 I DiscoveryManager: Discovery state (DiscoveryState{filterCriteria=[%urn:x-cast:com.google.cast.media, CFE7FEDA], categoryToCriteria={com.google.android.gms.cast.CATEGORY_CAST//urn:x-cast:com.google.cast.media//ALLOW_IPV6=[%urn:x-cast:com.google.cast.media], com.google.android.gms.cast.CATEGORY_CAST/CFE7FEDA/urn:x-cast:com.google.cast.media//ALLOW_IPV6=[CFE7FEDA, %urn:x-cast:com.google.cast.media]}, activeScan=false, activeScanWithScreenOff=false, discoveryRequestSupportsDynamicSession=false})
+03-29 18:48:48.494  1254  1254 D AOC     : A3:MSG: vsc_controller.cc, 738: VSC: [Rotation Vector Sensor] requestSensorBiasEvents: sensor 0x10002, enable 1.
+03-29 18:48:48.494  1021  1740 I sensor-suez: Vendor atom [id = 100242] reported.
+03-29 18:48:48.494  1021  1740 I sensor-suez: Vendor atom [id = 100243] reported.
+03-29 18:48:48.495  4987  4987 I CastMediaRouteProvider: Published 3 routes
+03-29 18:48:48.498 25850 25850 W AxMediaRouter: Ignoring null provider descriptor from ComponentInfo{com.google.android.gms/com.google.android.gms.cast.media.CastMediaRoute2ProviderService_Persistent}
+03-29 18:48:48.499  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:48:48.505  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+03-29 18:48:48.506  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+03-29 18:48:48.506  1580  4833 I WifiService: releaseMulticastLock uid=10147 lockTag=MdnsServiceBrowserImpl
+03-29 18:48:48.506  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+03-29 18:48:48.506  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+03-29 18:48:48.506  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+03-29 18:48:48.507  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+03-29 18:48:48.507  1580  4833 I WifiService: acquireMulticastLock uid=10147 lockTag=MdnsServiceBrowserImpl
+03-29 18:48:48.507  4987 28072 I FusedLocation: (REDACTED) stationary throttling engaged @%s
+03-29 18:48:48.509  1580  2045 E NsdService: id 12362 for 30 has no client mapping
+03-29 18:48:48.514  4987  5010 I MdnsServiceBrowser: (REDACTED) registering %s
+03-29 18:48:48.514  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+03-29 18:48:48.517  4987 28072 I FusedLocation: (REDACTED) stationary throttling engaged @%s
+03-29 18:48:48.524  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+03-29 18:48:48.529  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+03-29 18:48:48.536  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+03-29 18:48:48.542  1580  2045 I serviceDiscovery: [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+03-29 18:48:48.562  1021  1740 I sensor-suez: Vendor atom [id = 100245] reported.
+03-29 18:48:48.579  9587  9598 I pixel-thermal: rfpa_therm:37.582 raw data: rfpa_therm:37582 
+03-29 18:48:48.596  4987  4987 I CastMediaRouteProvider: Published 3 routes
+03-29 18:48:48.627 28095 28142 I HWUI    : Using FreeType backend (prop=Auto)
+03-29 18:48:48.655 28095 28103 I .example.mybike: Compiler allocated 5038KB to compile void android.view.ViewRootImpl.performTraversals()
+03-29 18:48:48.780  4987  5109 I FontLog : (REDACTED) Received query %s, URI %s
+03-29 18:48:48.780  4987  5109 I FontLog : (REDACTED) Query [%s] resolved to %s
+03-29 18:48:48.784  4987  5109 I FontLog : (REDACTED) Fetch %s end status %s
+03-29 18:48:48.789  4987  5171 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-29 18:48:48.796  4987  5171 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-29 18:48:48.954 25850 25925 W YT.codecreuse: Codec released via internal release.
+03-29 18:48:48.955 25850 28033 D SurfaceUtils: connecting to surface 0xb400007652e0bca0, reason connectToSurface
+03-29 18:48:48.955 25850 28033 I MediaCodec: [c2.google.av1.decoder] setting surface generation to 26470414
+03-29 18:48:48.955 25850 28033 D SurfaceUtils: disconnecting from surface 0xb400007652e0bca0, reason connectToSurface(reconnect)
+03-29 18:48:48.955 25850 28033 D SurfaceUtils: connecting to surface 0xb400007652e0bc90, reason connectToSurface(reconnect-with-listener)
+03-29 18:48:48.956 25850 28033 D GraphicsTracker: new surface in configuration: maxDequeueRequested(0), maxDequeueCommitted(19)
+03-29 18:48:48.956 25850 28033 D GraphicsTracker: new surface configured with id:111024904601617 gen:26470414 maxDequeue:19
+03-29 18:48:48.956 25850 28033 D GraphicsTracker: maxDequeueCount is already 19
+03-29 18:48:48.956 25850 28033 D Codec2Client: setOutputSurface -- generation=26470414 consumer usage=0x900
+03-29 18:48:48.956 25850 28033 D SurfaceUtils: disconnecting from surface 0xb400007652d51e80, reason disconnectFromSurface
+03-29 18:48:48.956 25850 28033 D CCodecBufferChannel: [c2.google.av1.decoder#769] MediaCodec discarded an unknown buffer
+03-29 18:48:48.957 25850 28033 D CCodecBufferChannel: [c2.google.av1.decoder#769] MediaCodec discarded an unknown buffer
+03-29 18:48:48.957 25850 28033 D CCodecBufferChannel: [c2.google.av1.decoder#769] MediaCodec discarded an unknown buffer
+03-29 18:48:48.957 25850 28033 D CCodecBufferChannel: [c2.google.av1.decoder#769] MediaCodec discarded an unknown buffer
+03-29 18:48:48.964 25850 28033 D SurfaceUtils: disconnecting from surface 0xb400007652e0bca0, reason disconnectFromSurface
+03-29 18:48:49.295 28095 28095 D data    : 500101001
+03-29 18:48:49.347 28095 28095 D data    : GeoJsonWrapper(type=FeatureCollection, features=[GeoJsonFeature(type=Feature, geometry=Geometry(type=Point, coordinates=[121.5436, 25.02605]), properties=YouBikeStation(id=500101001, stationName=YouBike2.0_捷運科技大樓站, district=大安區, lastUpdate=2026-03-29 18:47:01, address=復興南路二段235號前, stationNameEn=YouBike2.0_MRT Technology Bldg. Sta., addressEn=No.235， Sec. 2， Fuxing S. Rd., totalBikes=28, availableBikes=5, availableReturns=23, latitude=25.02605, longitude=121.5436, act=1)), GeoJsonFeature(type=Feature, geometry=Geometry(type=Point, coordinates=[121.54357, 25.02565]), properties=YouBikeStation(id=500101002, stationName=YouBike2.0_復興南路二段273號前, district=大安區, lastUpdate=2026-03-29 18:47:01, address=復興南路二段273號西側, stationNameEn=YouBike2.0_No.273， Sec. 2， Fuxing S. Rd., addressEn=No.273， Sec. 2， Fuxing S. Rd. (West), totalBikes=21, availableBikes=4, availableReturns=16, latitude=25.02565, longitude=121.54357, act=1)), GeoJsonFeature(type=Feature, geometry=Geometry(type=Point, coordinates=[121.54124, 25.02429]), properties=YouBikeStation(id=500101003, stationName=YouBike2.0_國北教大實小東側門, district=大安區, lastUpdate=2026-03-29 18:43:02, address=和平東路二段96巷7號, stationNameEn=YouBike2.0_NTUE Experiment Elementary School (East), addressEn=No. 7， Ln. 96， Sec. 2， Heping E. Rd, totalBikes=28, availableBikes=16, availableReturns=12, latitude=25.02429, longitude=121.54124, act=1)), GeoJsonFeature(type=Feature, geometry=Geometry(type=Point, coordinates=[121.54282, 25.02351]), properties=YouBikeStation(id=500101004, stationName=YouBike2.0_和平公園東側, district=大安區, lastUpdate=2026-03-29 18:47:01, address=和平東路二段118巷33號, stationNameEn=YouBike2.0_Heping Park (East), addressEn=No. 33， Ln. 118， Sec. 2， Heping E. Rd, totalBikes=11, availableBikes=7, availableReturns=3, latitude=25.02351, longitude=121.54282, act=1)), GeoJsonFeature(type=Feature, geometry=Geometry(type=Point, coordinates=[121.54299, 25.02153]), properties=YouBikeStation(id=500101005, stationName=YouBike2.0_辛亥復興路口西北側, district=大安區, lastUpdate=2026-03-29 18:37:03, address=復興南路二段368號, stationNameEn=YouBike2.0_Xinhai Fuxing Rd. Intersection (Northwest), addressEn=No. 368， Sec. 2， Fuxing S. Rd., totalBikes=16, availableBikes=16, availableReturns=0, latitude=25.02153, longitude=121.54299, act=1)), GeoJsonFeature(type=Feature, geometry=Geometry(type=Point, coordinates=[121.54328, 25.02429]), properties=YouBikeStation(id=500101006, stationName=YouBike2.0_復興南路二段280號前, district=大安區, lastUpdate=2026-03-29 18:47:01, address=復興南路二段280號, stationNameEn=YouBike2.0_No. 280， Sec. 2， Fuxing S. Rd., addressEn=No. 280， Sec. 2， Fuxing S. Rd., totalBikes=27, availableBikes=18, availableReturns=9, latitude=25.02429, longitude=121.54328, act=1)), GeoJsonFeature(type=Feature, geometry=Geometry(type=Point, coordinates=[121.54326, 25.02253]), properties=YouBikeStation(id=500101007, stationName=YouBike2.0_復興南路二段340巷口, district=大安區, lastUpdate=2026-03-29 18:41:04, address=復興南路二段342號, stationNameEn=YouBike2.0_Ln. 340， Sec. 2， Fuxing S. Rd., addressEn=No. 342， Sec. 2， Fuxing S. Rd., totalBikes=11, availableBikes=3, availableReturns=8, latitude=25.02253, longitude=121.54326, act=1)), GeoJsonFeature(type=Feature, geometry=Geometry(type=Point, coordinates=[121.53407, 25.02112]), properties=YouBikeStation(id=500101008, stationName=YouBike2.0_新生南路三段52號前, district=大安區, lastUpdate=2026-03-29 18:46:03, address=新生南路三段52號, stationNameEn=YouBike2.0_No. 52， Sec. 3， Xinsheng S. Rd., addressEn=No. 52， Sec. 3， Xinsheng S. Rd., totalBikes=17, availableBikes=5, availableReturns=12, latitude=25.02112, longitude=121.53407, act=1)), GeoJsonFeature(type=Feature, geometry=Geometry(type=Point, coordinates=[121.53384, 25.01976]), properties=YouBikeStation(id=500101009, stati
+03-29 18:48:49.452  1580  1948 D HintManagerService: Starts cleaning for 10198
+03-29 18:48:49.568  9587  9598 I pixel-thermal: disp_therm:33.731 raw data: disp_therm:33731 
+03-29 18:48:49.568  9587  9598 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: VIRTUAL-USB-UI:0 
+03-29 18:48:49.568  9587  9598 I pixel-thermal: btmspkr_therm:33.397 raw data: btmspkr_therm:33397 
+03-29 18:48:49.568  9587  9598 I pixel-thermal: usb_pwr_therm:33.419 raw data: usb_pwr_therm:33419 
+03-29 18:48:49.568  9587  9598 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: VIRTUAL-USB-THROTTLING:0 
+03-29 18:48:49.862 25850 27960 I FA      : Application backgrounded at: timestamp_millis: 1774781327857
+03-29 18:48:50.140  1059  1131 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:48:50.151 28095 28104 W .example.mybike: userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+03-29 18:48:50.181  1059  3044 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:48:50.181  1059  3044 E WifiHAL : Creating message to get cached scan results
+03-29 18:48:50.189  1059  3044 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:48:50.213  1059  3044 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:48:50.214  1059  3044 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:48:50.214  1059  3044 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:48:50.214  1059  3044 D WifiHAL : len = 4, expected len = 4
+03-29 18:48:50.215  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:48:50.218  1580  2042 D ConnectivityService: NetReassign [no changes] [c 1] [a 1] [i 1]
+03-29 18:48:50.424  1580  1730 V DisplayPowerController[0]: Brightness [0.05] reason changing to: 'automatic [ dim ]', previous reason: 'automatic'.
+03-29 18:48:50.425  1580  1730 I DisplayPowerController[0]: BrightnessEvent: brt=0.05(56.0%), nits=91.35098, lux=1777.6205, reason=automatic [ dim ], strat=AutomaticBrightnessStrategy, state=ON, stateReason=DEFAULT_POLICY, policy=DIM, flags=, initBrt=0.14659841, rcmdBrt=0.14659841, preBrt=0.05584365, preLux=173.02203, lastReadLux=2236.6646, wasShortTermModelActive=false, autoBrightness=true (default), unclampedBrt=0.14659841, hbmMax=0.47425702, hbmMode=off, thrmMax=1.0, rbcStrength=35, powerFactor=1.0, physDisp=內建畫面(local:4619827677550801152), logicalId=0, slowChange=false, rampSpeed=0.7047244
+03-29 18:48:50.431  2431  3057 I PixelDisplayManager: onDisplayChanged(內建畫面, 0, local:4619827677550801152): screenOn=true, hbmMode=0, br=0.05, product=DeviceProductInfo{name=Common Panel, manufacturerPnpId=GGL, productId=0, modelYear=null, manufactureDate=ManufactureDate{week=1, year=1990}, connectionToSinkType=1, edidStructureMetadata=EdidStructureMetadata{version=0, revision=0}, videoInputType=0}
+03-29 18:48:50.436   505 16953 I hwc-display: path=drm, id=0, level=1710, nits=261.048798, brightness=0.144873, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.445   505 16953 I hwc-display: path=drm, id=0, level=1690, nits=254.043015, brightness=0.140955, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.453   505   505 I hwc-display: path=drm, id=0, level=1670, nits=247.270401, brightness=0.137168, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.461   505 16953 I hwc-display: path=drm, id=0, level=1650, nits=240.716202, brightness=0.133502, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.461  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1690 luma:75 leak:0.58/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[0
+03-29 18:48:50.469   505 16953 I hwc-display: path=drm, id=0, level=1630, nits=234.365158, brightness=0.129950, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.477   505 16953 I hwc-display: path=drm, id=0, level=1610, nits=228.225418, brightness=0.126516, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.486   505 16953 I hwc-display: path=drm, id=0, level=1590, nits=222.281754, brightness=0.123192, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.494   505 16953 I hwc-display: path=drm, id=0, level=1571, nits=216.537369, brightness=0.119980, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.502   505 16953 I hwc-display: path=drm, id=0, level=1553, nits=210.977325, brightness=0.116870, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.511   505 16953 I hwc-display: path=drm, id=0, level=1535, nits=205.581024, brightness=0.113852, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.519   505   505 I hwc-display: path=drm, id=0, level=1518, nits=200.379318, brightness=0.110943, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.520  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1553 luma:75 leak:0.49/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[0
+03-29 18:48:50.527   505   505 I hwc-display: path=drm, id=0, level=1501, nits=195.334137, brightness=0.108121, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.536   505   505 I hwc-display: path=drm, id=0, level=1483, nits=190.449463, brightness=0.105389, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.544   505   505 I hwc-display: path=drm, id=0, level=1465, nits=185.724228, brightness=0.102747, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.553   505   505 I hwc-display: path=drm, id=0, level=1448, nits=181.156906, brightness=0.100192, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.561   505   505 I hwc-display: path=drm, id=0, level=1432, nits=176.732803, brightness=0.097718, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.569   505   505 I hwc-display: path=drm, id=0, level=1416, nits=172.449692, brightness=0.095323, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.578   505 16953 I hwc-display: path=drm, id=0, level=1401, nits=168.313095, brightness=0.093009, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.580  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1432 luma:75 leak:0.41/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[0
+03-29 18:48:50.586   505 16953 I hwc-display: path=drm, id=0, level=1386, nits=164.311157, brightness=0.090771, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.594   505 16953 I hwc-display: path=drm, id=0, level=1372, nits=160.430206, brightness=0.088601, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.602   505 16953 I hwc-display: path=drm, id=0, level=1358, nits=156.675659, brightness=0.086501, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.611   505 16953 I hwc-display: path=drm, id=0, level=1343, nits=153.047928, brightness=0.084472, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.619   505 16953 I hwc-display: path=drm, id=0, level=1328, nits=149.532578, brightness=0.082506, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.628   505 16953 I hwc-display: path=drm, id=0, level=1314, nits=146.072647, brightness=0.080571, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.636   505   505 I hwc-display: path=drm, id=0, level=1300, nits=142.645126, brightness=0.078654, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.636  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1328 luma:75 leak:0.34/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[0
+03-29 18:48:50.644   505   505 I hwc-display: path=drm, id=0, level=1286, nits=139.262817, brightness=0.076762, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.653   505   505 I hwc-display: path=drm, id=0, level=1272, nits=135.918365, brightness=0.074892, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.661   505   505 I hwc-display: path=drm, id=0, level=1259, nits=132.616104, brightness=0.073045, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.669   505   505 I hwc-display: path=drm, id=0, level=1244, nits=129.356171, brightness=0.071222, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.678   505   505 I hwc-display: path=drm, id=0, level=1229, nits=126.132393, brightness=0.069419, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.686   505   505 I hwc-display: path=drm, id=0, level=1215, nits=122.955864, brightness=0.067642, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.694   505 16953 I hwc-display: path=drm, id=0, level=1200, nits=119.820648, brightness=0.065889, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.695  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1229 luma:75 leak:0.27/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[0
+03-29 18:48:50.703   505 16953 I hwc-display: path=drm, id=0, level=1186, nits=116.726425, brightness=0.064158, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.711   505 16953 I hwc-display: path=drm, id=0, level=1172, nits=113.676476, brightness=0.062453, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.719   505 16953 I hwc-display: path=drm, id=0, level=1158, nits=110.660316, brightness=0.060766, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.728   505 16953 I hwc-display: path=drm, id=0, level=1145, nits=107.687111, brightness=0.059103, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.736   505 16953 I hwc-display: path=drm, id=0, level=1130, nits=104.755737, brightness=0.057464, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.745   505 16953 I hwc-display: path=drm, id=0, level=1116, nits=101.868126, brightness=0.055849, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.753   505   505 I hwc-display: path=drm, id=0, level=1101, nits=99.023666, brightness=0.054258, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.754  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1130 luma:75 leak:0.21/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[0
+03-29 18:48:50.762   505   505 I hwc-display: path=drm, id=0, level=1087, nits=96.217049, brightness=0.052688, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.770   505   505 I hwc-display: path=drm, id=0, level=1073, nits=93.448463, brightness=0.051140, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.778   505 16953 I hwc-display: path=drm, id=0, level=1062, nits=91.410599, brightness=0.050000, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:50.779  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1087 luma:75 leak:0.18/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[1
+03-29 18:48:50.780  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3186: USF: TMD3733: vsync_delay_usec: 5800
+03-29 18:48:50.837  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1062 luma:75 leak:0.16/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[0
+03-29 18:48:50.865  1060  1665 D StreamHalAidl: [out|ioHandle:21] standby
+03-29 18:48:50.865  1060  1665 D StreamHalAidl: [out|ioHandle:21] pause
+03-29 18:48:50.865   988  1664 I AHal::Stream: Stop: stop stream deep-buffer-playback
+03-29 18:48:50.865   988  1664 I AHal::TinyalsaDriverOperations: Stop: pcm_close card_index 0 device 5
+03-29 18:48:50.866  1254  1254 D AOC     : F1:MSG: controller.cc, 275: AudioOutCtrl: cmd ID: 0x00c9, tag: 0x92 [cntr = 56469]
+03-29 18:48:50.866  1254  1254 D AOC     : F1:MSG: controller.cc, 919: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x00c9, tag: 0x92, rc: 0
+03-29 18:48:50.875  1254  1254 D AOC     : H0:Mixer AMixSPKR Input 5 RB overflow. Resyncing.
+03-29 18:48:50.898   988  1664 I AHal::Router: Deactivate: deactivate 400002
+03-29 18:48:50.898   988  1664 I AHal::Router: InvalidateLocked: new graph #9108 Edges(0):
+03-29 18:48:50.899   988  1664 I AHal::Router: InvalidateLocked: ============ apply graph #9108 [Sun Mar 29 18:48:50 2026] start ============
+03-29 18:48:50.899   988  1664 I AHal::Waves: UpdateActiveDevices: removing speaker
+03-29 18:48:50.899   988  1664 I AHal::DeviceInterface: Disconnect: disconnect deep-buffer-playback-0 -> speaker
+03-29 18:48:50.900  1254  1254 D AOC     : F1:MSG: controller.cc, 275: AudioOutCtrl: cmd ID: 0x010f, tag: 0x93 [cntr = 56470]
+03-29 18:48:50.900  1254  1254 D AOC     : F1:Unregistered Source 5 [DeepBuffer] from Sink 0 [Speaker]
+03-29 18:48:50.900  1254  1254 D AOC     : F1:AT Map:0 (LL:0), 0 EPs active, Power: Yes, Config: No
+03-29 18:48:50.900  1254  1254 D AOC     : F1:Mixer 0 configuration changed: (0)
+03-29 18:48:50.900  1254  1254 D AOC     : F1:Sink 0 Configuration changed: ULL (disabled)
+03-29 18:48:50.900  1254  1254 D AOC     : F1:[SPKR] protection library mips: 0
+03-29 18:48:50.901  1254  1254 D AOC     : F1:[Idle Tracker] long no idle:[0] average between idle:[2.637020ms] max no idle:[43.767258ms]
+03-29 18:48:50.901  1254  1254 D AOC     : F1:TRC: hotword_input_processor.cc, 1008: Receive cmd: 0x7a (122)
+03-29 18:48:50.901  1254  1254 D AOC     : H0:Mixer AMixSPKR: 480 samples (0000/0000) (OFF SC) multi out OFF
+03-29 18:48:50.901  1254  1254 D AOC     : H0:Mixer configuration updated
+03-29 18:48:50.902  1254  1254 D AOC     : H0:[Idle Tracker] long no idle:[0] average between idle:[1.721649ms] max no idle:[6.451619ms]
+03-29 18:48:50.902   988  1664 I AHal::AudioRoutePathController: ResetPath: deep-buffer-playback-0 -> speaker: true
+03-29 18:48:50.905   988  1664 I AHal::AudioRoutePathController: ResetPath: speaker: true
+03-29 18:48:50.905   988  1664 I AHal::Speaker: Disable: speaker
+03-29 18:48:50.906   988  1664 I AHal::AudioRoutePathController: ResetPath: hostless-ulC spk-vi: true
+03-29 18:48:50.906   988  1664 I AHal::TinyalsaDriverOperations: Stop: pcm_close card_index 0 device 15
+03-29 18:48:50.906   988  1664 I AHal::BatteryMitigation: UpdateState: Standby -> Idle
+03-29 18:48:50.906   988  1664 I AHal::AdaptedRouteControl: Update: update route from adapted-speaker to null
+03-29 18:48:50.906   988  1664 I AHal::AudioRoutePathController: ResetPath: adapted-speaker: true
+03-29 18:48:50.906   988  1664 I AHal::Router: LogTransferring: Transferring (1):
+03-29 18:48:50.906   988  1664 I AHal::Router: LogTransferring:   deep-buffer-playback-0 -> speaker => (null)
+03-29 18:48:50.906   988  1621 I AHal::Tas25xxCodec: amp is turned off, skip to provide health data
+03-29 18:48:50.907   988  1664 I AHal::PlaybackThermalThrottleByTemperature: Update Temperature: kOnce to kIdle
+03-29 18:48:50.907   988  1664 I AHal::VoiceCall: Update: reset echo reference device
+03-29 18:48:50.907   988  1664 I AHal::Router: InvalidateLocked: ============ apply graph #9108 end ============
+03-29 18:48:50.907   988  1664 D AHal::AudioMetric::EventDataHandler: UpdatePlaybackInfo: Updating Playback Info: PlaybackInfo {}
+03-29 18:48:50.907   988  1664 D AHal::AudioMetric::AtomWriter: WriteAtom: Writing atom to statsd service. Atom: MediaPlaybackUsageAtom: Playback Info: PlaybackInfo {Route: {audio_source: SYS_RESERVED_INVALID, device: speaker, use_case: deep-buffer-playback}, volume: 0, is_active: 0, sample_rate: 48000, channel_count: 2, audio_format_type: PCM, pcm_type: FLOAT_32_BIT, encoding:  }, Device State: {camera_type: Front, screen_orientation: DEG_0, screen_state: on, folded_type: kUnknown, in_thermal_throttle_duration_ms: 0, thermal_throttle_count: 0, in_acoustic_shock_duration_ms: 0, acoustic_shock_count: 0, in_battery_adapted_audio_control_duration_ms: 0, battery_adapted_audio_control_count: 0}, duration_second: 14, is_ended: 1
+03-29 18:48:50.907   988  1664 D AHal::AudioMetric::EventDataHandler: UpdateCaptureInfo: Updating Capture Info: CaptureInfo: {}
+03-29 18:48:50.907   988  1664 D AHal::AudioMetric::EventDataHandler: UpdateCallInfo: Updating Call Info: RoutingInfo:
+03-29 18:48:50.907   988  1664 D AHal::AudioMetric::EventDataHandler: Uplink: NULL, 
+03-29 18:48:50.907   988  1664 D AHal::AudioMetric::EventDataHandler: Downlink: NULL
+03-29 18:48:50.907   988  1664 D AHal::AudioMetric::EventDataHandler: AudioMode: NORMAL
+03-29 18:48:50.907   988  1664 I AHal::AocDspModeAdapter: RemoveRoutes: remove Route:{{use case = deep-buffer-playback, device = speaker, source = SYS_RESERVED_INVALID, channel_count = 2}}, current active route: 
+03-29 18:48:50.908   988  1619 I AHal::BatteryAdaptiveAudio: ProcessPlaybackTunerControl: update playback tuner with Bypassed
+03-29 18:48:50.909  1254  1254 D AOC     : F1:TRC: hotword_input_processor.cc, 1504: Finished cmd: 0x7a (122)
+03-29 18:48:50.909  1254  1254 D AOC     : F1:MSG: hotword_aec.cc, 119: Reset HotwordAec (reason = stop aec)
+03-29 18:48:50.909  1254  1254 D AOC     : F1:MSG: controller.cc, 919: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x010f, tag: 0x93, rc: 0
+03-29 18:48:50.909  1254  1254 D AOC     : F1:MSG: controller.cc, 275: AudioInCtrl: cmd ID: 0x00cf, tag: 0x78 [cntr = 6621]
+03-29 18:48:50.909  1254  1254 D AOC     : F1:MSG: audio_capture_pdm.cc, 454: Reconfig not seamless
+03-29 18:48:50.912  1254  1254 D AOC     : F1:Stream 1: mask 0x3, rings {1, 0}, pipe 0x1, sr 16000, il {0,1,0,0}, en 1, mc 0, ni 1, fpo 0, ru 1, hq 0
+03-29 18:48:50.913  1254  1254 D AOC     : F1:MSG: audio_capture_pdm.cc, 580: Stream 1 restarted (ramp ON)
+03-29 18:48:50.913  1254  1254 D AOC     : F1:MSG: audio_capture_pdm.cc, 1045: Starting PDM in Low Power mode, mask=0x3
+03-29 18:48:50.964  1254  1254 D AOC     : F1:MSG: controller.cc, 919: AudioInCtrl: ipc: sound_trigger, cmd ID: 0x00cf, tag: 0x78, rc: 0
+03-29 18:48:50.965   988  1664 I StHal::SoundTriggerHal: ProcessAecEvent: Eraser disabled 
+03-29 18:48:50.965   988  1664 I ASvc::PeriodicWorker: SetLinkedConfigIds: update linked configs []
+03-29 18:48:50.965  1060  1665 D StreamHalAidl: [out|ioHandle:21] flush
+03-29 18:48:50.966   988  1664 I ASvc::CommandWorker: cw-deep-buffer-playback: Command{flush: Void{}} in StreamOutPausedState
+03-29 18:48:50.966   988  1664 I ASvc::StreamOutSyncStates: FlushDataQueue: flush 0 bytes in data queue
+03-29 18:48:50.967   988  1664 I ASvc::CommandWorker: cw-deep-buffer-playback: Command{standby: Void{}} in StreamOutIdleState
+03-29 18:48:50.967  1254  1254 D AOC     : F1:MSG: controller.cc, 275: AudioInCtrl: cmd ID: 0x0145, tag: 0x79 [cntr = 6622]
+03-29 18:48:50.967  1254  1254 D AOC     : F1:MSG: feedback_src.cc, 602: AEC Ref Source: SPKR
+03-29 18:48:50.967  1254  1254 D AOC     : F1:MSG: controller.cc, 919: AudioInCtrl: ipc: sound_trigger, cmd ID: 0x0145, tag: 0x79, rc: 0
+03-29 18:48:50.974  1254  1254 D AOC     : F1:MSG: hotword_aec.cc, 119: Reset HotwordAec (reason = resync)
+03-29 18:48:50.994  4987 28072 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+03-29 18:48:50.994  4987 28072 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+03-29 18:48:50.996  1580  1730 V DisplayPowerController[0]: Brightness [0.14659841] reason changing to: 'automatic', previous reason: 'automatic [ dim ]'.
+03-29 18:48:50.996  1580  1730 I DisplayPowerController[0]: BrightnessEvent: brt=0.14659841(78.0%), nits=263.74933, lux=1777.6205, reason=automatic, strat=AutomaticBrightnessStrategy, state=ON, stateReason=DEFAULT_POLICY, policy=BRIGHT, flags=, initBrt=0.05, rcmdBrt=0.14659841, preBrt=0.05584365, preLux=173.02203, lastReadLux=2235.131, wasShortTermModelActive=false, autoBrightness=true (default), unclampedBrt=0.14659841, hbmMax=0.47425702, hbmMode=off, thrmMax=1.0, rbcStrength=35, powerFactor=1.0, physDisp=內建畫面(local:4619827677550801152), logicalId=0, slowChange=false, rampSpeed=0.7047244
+03-29 18:48:51.006  2431  3057 I PixelDisplayManager: onDisplayChanged(內建畫面, 0, local:4619827677550801152): screenOn=true, hbmMode=0, br=0.14659841, product=DeviceProductInfo{name=Common Panel, manufacturerPnpId=GGL, productId=0, modelYear=null, manufactureDate=ManufactureDate{week=1, year=1990}, connectionToSinkType=1, edidStructureMetadata=EdidStructureMetadata{version=0, revision=0}, videoInputType=0}
+03-29 18:48:51.012   505   505 I hwc-display: path=drm, id=0, level=1076, nits=94.034492, brightness=0.051467, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.020   505   505 I hwc-display: path=drm, id=0, level=1090, nits=96.808075, brightness=0.053019, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.028   505   505 I hwc-display: path=drm, id=0, level=1104, nits=99.621864, brightness=0.054592, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.036   505   505 I hwc-display: path=drm, id=0, level=1119, nits=102.475037, brightness=0.056188, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.045   505   505 I hwc-display: path=drm, id=0, level=1134, nits=105.374184, brightness=0.057809, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.054   505   505 I hwc-display: path=drm, id=0, level=1147, nits=108.311333, brightness=0.059452, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.054  2124  2134 I deeptouch: I0000 00:00:1774781331.054753    2134 tf_lite_classifier.cc:415] Event stream classified as kNone
+03-29 18:48:51.062   505   505 I hwc-display: path=drm, id=0, level=1161, nits=111.286339, brightness=0.061116, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.064  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1147 luma:75 leak:0.22/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[1
+03-29 18:48:51.064  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3186: USF: TMD3733: vsync_delay_usec: 5800
+03-29 18:48:51.070   505   505 I hwc-display: path=drm, id=0, level=1175, nits=114.304382, brightness=0.062804, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.078   505   505 I hwc-display: path=drm, id=0, level=1189, nits=117.366096, brightness=0.064516, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.086   505   505 I hwc-display: path=drm, id=0, level=1203, nits=120.464821, brightness=0.066249, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.095   505   505 I hwc-display: path=drm, id=0, level=1218, nits=123.627029, brightness=0.068018, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.103   505   505 I hwc-display: path=drm, id=0, level=1232, nits=126.819756, brightness=0.069803, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.105  1580  1672 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+03-29 18:48:51.105  1580  1672 D CoreBackPreview: Window{363c6c9 u0 android}: Setting back callback null
+03-29 18:48:51.106  1580  6688 D HWUI    : endAllActiveAnimators on 0xb400007652cea190 (RippleDrawable) with handle 0xb400007612d53ba0
+03-29 18:48:51.115   505 16953 I hwc-display: path=drm, id=0, level=1247, nits=130.043457, brightness=0.071606, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.121   505   505 I hwc-display: path=drm, id=0, level=1262, nits=133.310730, brightness=0.073433, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.122  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1247 luma:75 leak:0.29/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[0
+03-29 18:48:51.122  1580  1674 V WindowManager: Unknown focus tokens, dropping reportFocusChanged
+03-29 18:48:51.129   505   505 I hwc-display: path=drm, id=0, level=1275, nits=136.621765, brightness=0.075285, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.138   505   505 I hwc-display: path=drm, id=0, level=1289, nits=139.972549, brightness=0.077159, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.143  1580  1967 I ImeTracker: com.example.mybike:ab1e186d: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false userId 0 displayId 0
+03-29 18:48:51.145   505   505 I hwc-display: path=drm, id=0, level=1303, nits=143.365799, brightness=0.079057, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.147 28095 28095 D InsetsController: hide(ime())
+03-29 18:48:51.147 28095 28095 I ImeTracker: com.example.mybike:ab1e186d: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+03-29 18:48:51.154   505   505 I hwc-display: path=drm, id=0, level=1317, nits=146.800690, brightness=0.080978, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.155 17340 17340 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2114 
+03-29 18:48:51.156  1580  4685 I ImeTracker: system_server:d9dc1a0d: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false displayId 0
+03-29 18:48:51.157  1580  1674 I ImeTracker: system_server:d9dc1a0d: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-29 18:48:51.157 17340 17340 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+03-29 18:48:51.158 17340 17340 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1385 onStartInput(EditorInfo{EditorInfo{packageName=com.example.mybike, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-29 18:48:51.158 17340 17340 W AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():319 Null input view, cannot update padding!
+03-29 18:48:51.159 17340 17340 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+03-29 18:48:51.160  1580  4685 W PackageConfigPersister: App-specific configuration not found for packageName: com.example.mybike and userId: 0
+03-29 18:48:51.162   505   505 I hwc-display: path=drm, id=0, level=1331, nits=150.277878, brightness=0.082923, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.170   505   505 I hwc-display: path=drm, id=0, level=1346, nits=153.814392, brightness=0.084901, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.178   505   505 I hwc-display: path=drm, id=0, level=1361, nits=157.470215, brightness=0.086945, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.180  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1346 luma:95 leak:0.45/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[0
+03-29 18:48:51.187   505   505 I hwc-display: path=drm, id=0, level=1375, nits=161.245789, brightness=0.089057, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.195   505   505 I hwc-display: path=drm, id=0, level=1390, nits=165.149765, brightness=0.091240, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.203   505   505 I hwc-display: path=drm, id=0, level=1404, nits=169.181091, brightness=0.093495, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.212   505   505 I hwc-display: path=drm, id=0, level=1420, nits=173.354813, brightness=0.095829, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.220   505   505 I hwc-display: path=drm, id=0, level=1436, nits=177.672791, brightness=0.098244, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.229   505   505 I hwc-display: path=drm, id=0, level=1452, nits=182.137299, brightness=0.100741, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.237   505 16953 I hwc-display: path=drm, id=0, level=1469, nits=186.740601, brightness=0.103315, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.239  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1436 luma:163 leak:0.90/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[
+03-29 18:48:51.245   505 16953 I hwc-display: path=drm, id=0, level=1487, nits=191.498840, brightness=0.105976, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.253   505 16953 I hwc-display: path=drm, id=0, level=1505, nits=196.413208, brightness=0.108725, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.261   505 16953 I hwc-display: path=drm, id=0, level=1522, nits=201.487839, brightness=0.111563, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.270   505 16953 I hwc-display: path=drm, id=0, level=1539, nits=206.742065, brightness=0.114501, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.279   505 16953 I hwc-display: path=drm, id=0, level=1557, nits=212.156876, brightness=0.117530, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.288   505 16953 I hwc-display: path=drm, id=0, level=1576, nits=217.763275, brightness=0.120665, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.295   505   505 I hwc-display: path=drm, id=0, level=1595, nits=223.543015, brightness=0.123898, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.295  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1557 luma:180 leak:1.18/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[
+03-29 18:48:51.303   505   505 I hwc-display: path=drm, id=0, level=1614, nits=229.529144, brightness=0.127245, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.311   505   505 I hwc-display: path=drm, id=0, level=1635, nits=235.708740, brightness=0.130702, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.321   505   505 I hwc-display: path=drm, id=0, level=1654, nits=242.107895, brightness=0.134280, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.330   505   505 I hwc-display: path=drm, id=0, level=1674, nits=248.728638, brightness=0.137983, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.338   505   505 I hwc-display: path=drm, id=0, level=1694, nits=255.569855, brightness=0.141809, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.346   505 16953 I hwc-display: path=drm, id=0, level=1715, nits=262.637360, brightness=0.145762, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.354  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1694 luma:180 leak:1.39/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[
+03-29 18:48:51.354   505 16953 I hwc-display: path=drm, id=0, level=1719, nits=264.133148, brightness=0.146598, DimmingOn=0, Hbm=0, LhbmOn=0, OpRate=0
+03-29 18:48:51.371  1227  2162 D AidlBufferPoolAcc: evictor expired: 2, evicted: 0
+03-29 18:48:51.398 27845 28068 D AidlBufferPool: bufferpool2 0xb400007702c1f3d8 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/36 (fetch/transfer)
+03-29 18:48:51.398 27845 28068 D AidlBufferPool: bufferpool2 0xb400007702c21688 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/34 (fetch/transfer)
+03-29 18:48:51.398 27845 28068 D AidlBufferPoolAcc: evictor expired: 2, evicted: 2
+03-29 18:48:51.414  1254  1254 D AOC     : A3:MSG: tmd3733_device.cc, 3251: USF: TMD3733: dbv:1719 luma:180 leak:1.43/0.00 rr:120 te2:0 ctx:0x0 status:1 op_hz:0[
+03-29 18:48:51.580  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:51.582  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:51.582  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10306} in 3ms
+03-29 18:48:51.583  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:51.584  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:51.584  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={20306} in 2ms
+03-29 18:48:51.662  4987 27832 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+03-29 18:48:51.700  4987 27377 I Fitness : (REDACTED) TopLevelDataStreamWriter#process(%s, %s)
+03-29 18:48:52.287  4987  5291 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@5dfc404
+03-29 18:48:52.371  1227  2162 D AidlBufferPool: bufferpool2 0xb400007d2f8bdda8 : 0(0 size) total buffers - 0(0 size) used buffers - 9/16 (recycle/alloc) - 7/15 (fetch/transfer)
+03-29 18:48:52.371  1227  2162 D AidlBufferPool: bufferpool2 0xb400007d2f8b0d88 : 0(0 size) total buffers - 0(0 size) used buffers - 9/16 (recycle/alloc) - 7/15 (fetch/transfer)
+03-29 18:48:52.371  1227  2162 D AidlBufferPool: bufferpool2 0xb400007d2f8be6e8 : 0(0 size) total buffers - 0(0 size) used buffers - 9/16 (recycle/alloc) - 7/15 (fetch/transfer)
+03-29 18:48:52.371  1227  2162 D AidlBufferPool: bufferpool2 0xb400007d2f8bcfc8 : 0(0 size) total buffers - 0(0 size) used buffers - 8/15 (recycle/alloc) - 7/14 (fetch/transfer)
+03-29 18:48:52.371  1227  2162 D AidlBufferPoolAcc: evictor expired: 6, evicted: 4
+03-29 18:48:52.399 27845 28068 D AidlBufferPool: bufferpool2 0xb400007702c23248 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/36 (fetch/transfer)
+03-29 18:48:52.399 27845 28068 D AidlBufferPool: bufferpool2 0xb400007702c26e68 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/36 (fetch/transfer)
+03-29 18:48:52.399 27845 28068 D AidlBufferPoolAcc: evictor expired: 2, evicted: 2
+03-29 18:48:52.796  4987  5291 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@e58c507
+03-29 18:48:52.897  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:52.898  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:52.898  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10228} in 3ms
+03-29 18:48:52.899  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:52.900  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:52.900  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={20228} in 2ms
+03-29 18:48:52.901  1250  1250 W TracingMuxer: type=1400 audit(0.0:619948): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1312 scontext=u:r:gxp_logging:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+03-29 18:48:52.932  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_input: [37293.00 37626.00 39118.00 33330.00 33375.00 33709.00 37738.00 41158.00 ]
+03-29 18:48:52.933  9587  9598 I native  : I0000 00:00:1774781332.933111    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:48:52.933  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_output: [35503.4 ]
+03-29 18:48:52.933  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: predicted_value: [35503.4 ]
+03-29 18:48:52.933  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-MID:35.5429 raw data: VIRTUAL-SKIN:35542.9 VIRTUAL-SKIN-CPU-MID:35542.9 VIRTUAL-SKIN-LEGACY:36034.1 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:530.707 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:35503.4 VIRTUAL-SKIN-MODEL-CLAMPED:35503.4 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-530.707 VIRTUAL-SKIN-MODEL-UPDATED:35542.9 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:35503.4 VIRTUAL-SKIN-SUB-0:35492.2 VIRTUAL-SKIN-SUB-1:35309.5 VIRTUAL-SKIN-SUB-2:36027 VIRTUAL-SKIN-SUB-3:36034.1 VIRTUAL-SKIN-SUB-4:35123.3 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery:35200 btmspkr_therm:33375 charging_therm:39118 disp_therm:33709 north_therm:37738 quiet_therm:37626 rfpa_therm:37293 soc_therm:41158 usb_pwr_therm:33330 
+03-29 18:48:52.933  9587  9598 I pixel-thermal: north_therm:37.738 raw data: north_therm:37738 
+03-29 18:48:52.934  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SOC:35.5429 raw data: VIRTUAL-SKIN:35542.9 VIRTUAL-SKIN-SOC:35542.9 
+03-29 18:48:52.934  9587  9598 I pixel-thermal: VIRTUAL-SKIN-DISPLAY:35.5429 raw data: VIRTUAL-SKIN:35542.9 VIRTUAL-SKIN-DISPLAY:35542.9 
+03-29 18:48:52.934  9587  9598 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:48:52.934  9587  9598 I pixel-thermal: VIRTUAL-SKIN:35.5429 raw data: VIRTUAL-SKIN:35542.9 
+03-29 18:48:52.934  9587  9598 I pixel-thermal: VIRTUAL-SKIN-HINT:35.5429 raw data: VIRTUAL-SKIN:35542.9 VIRTUAL-SKIN-HINT:35542.9 
+03-29 18:48:52.934  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-LIGHT-ODPM:35.5429 raw data: VIRTUAL-SKIN:35542.9 VIRTUAL-SKIN-CPU-LIGHT-ODPM:35542.9 
+03-29 18:48:52.934  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-ODPM:35.5429 raw data: VIRTUAL-SKIN:35542.9 VIRTUAL-SKIN-CPU-ODPM:35542.9 
+03-29 18:48:52.934  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_input: [37293.00 37626.00 39118.00 33330.00 33375.00 33709.00 37738.00 41158.00 35200.00 1320.89 10.02 347.54 47.27 2.61 97.80 ]
+03-29 18:48:52.934  9587  9598 I native  : I0000 00:00:1774781332.934714    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:48:52.934  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_output: [34208.7 ]
+03-29 18:48:52.934  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: predicted_value: [34208.7 ]
+03-29 18:48:52.935  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_input: [35200.00 33375.00 39118.00 33709.00 37738.00 37626.00 37293.00 41158.00 33330.00 ]
+03-29 18:48:52.935  9587  9598 I native  : I0000 00:00:1774781332.935133    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:48:52.935  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_output: [33761.3 ]
+03-29 18:48:52.935  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: predicted_value: [33761.3 ]
+03-29 18:48:52.935  9587  9598 I pixel-thermal: STATS-UPDATOR:0 raw data: EXTREME-SOC-CONDITION-CHECK:0 MAIN_SOC_POWER:913.257 MODEL_CAMERA_PWR:10.0213 MODEL_DISPLAY_PWR:347.54 MODEL_MISC_PWR:1320.89 MODEL_MODEM_PWR:47.2735 MODEL_RFFE_PWR:2.60747 MODEL_WLAN_BT_PWR:97.797 NORTH_THERM-UNDER-THRESHOLD:1 NORTH_THERM-VSKIN-DIFF-DURING-NORTH_THERM-OVER-THRESHOLD:-997805 NORTH_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-997805 QUIET_THERM-UNDER-THRESHOLD:1 QUIET_THERM-VSKIN-DIFF-DURING-QUIET_THERM-OVER-THRESHOLD:-997917 QUIET_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-997917 RFPA_THERM-UNDER-THRESHOLD:1 RFPA_THERM-VSKIN-DIFF-DURING-RFPA_THERM-OVER-THRESHOLD:-998250 RFPA_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998250 SOC_THERM-UNDER-THRESHOLD:1 SOC_THERM-VSKIN-DIFF-DURING-SOC_THERM-OVER-THRESHOLD:-994385 SOC_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-994385 STATS-UPDATOR:0 TPU_35S:0 VIRTUAL-SKIN:35542.9 VIRTUAL-SKIN-LEGACY:36034.1 VIRTUAL-SKIN-MODEL:35503.4 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-530.707 VIRTUAL-SKIN-ODPM-MODEL:34208.7 VIRTUAL-SKIN-SPEAKER-MODEL:33761.3 VSKIN-SKIN-UNDER-52:1 battery:35200 btmspkr_therm:33375 charging_therm:39118 disp_therm:33709 north_therm:37738 quiet_therm:37626 rfpa_therm:37293 soc_therm:41158 usb_pwr_therm:33330 
+03-29 18:48:52.935  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-HIGH:35.5429 raw data: VIRTUAL-SKIN:35542.9 VIRTUAL-SKIN-CPU-HIGH:35542.9 
+03-29 18:48:52.935  9587  9598 I pixel-thermal: quiet_therm:37.626 raw data: quiet_therm:37626 
+03-29 18:48:52.935  9587  9598 I pixel-thermal: cellular-emergency:35.5429 raw data: VIRTUAL-SKIN:35542.9 cellular-emergency:35542.9 
+03-29 18:48:53.103  4987  5291 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@6ea95f6
+03-29 18:48:53.129  4987 27833 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+03-29 18:48:53.190  4987 28072 I Fitness : (REDACTED) Initializing package %s: %d subscriptions
+03-29 18:48:53.191  4987 28072 I Fitness : (REDACTED) FitRecording initialized.  Recreated %d subscriptions out of %d.
+03-29 18:48:53.216  1059  3044 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:48:53.260  1059  1131 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:48:53.261  1059  1131 E WifiHAL : Creating message to get cached scan results
+03-29 18:48:53.265  1059  1131 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:48:53.293  1059  1131 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:48:53.293  1059  1131 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:48:53.293  1059  1131 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:48:53.293  1059  1131 D WifiHAL : len = 4, expected len = 4
+03-29 18:48:53.295  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:48:53.345 28095 28179 D ProfileInstaller: Installing profile for com.example.mybike
+03-29 18:48:53.455 30714  4985 I emwq    : (REDACTED) appOpsListener %s %s
+03-29 18:48:53.456  1580  2042 D InetDiagMessage: Destroyed 2 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:53.458  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:53.458  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10198} in 6ms
+03-29 18:48:53.458 30714  4985 I emwq    : (REDACTED) Ignoring irrelevant audio permission changes for package %s
+03-29 18:48:53.460  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:53.461  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:53.461  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={20198} in 3ms
+03-29 18:48:54.223  2332  2552 D TemperatureStateSource: sequence=42327 actualDelay=10000
+03-29 18:48:54.226  2332  2552 D TemperatureStateSource: Reading temperature: sequence=42328
+03-29 18:48:54.227  2332  2631 D ImpulseConnection: timeout happen: com.google.android.apps.turbo
+03-29 18:48:54.228  2332  2631 D ImpulseConnection: unbindService for releasing a CONNECTED connection com.google.android.apps.turbo
+03-29 18:48:54.228  9587  9587 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:48:54.228  9587  9587 I pixel-thermal: VIRTUAL-SKIN:35.5429 raw data: VIRTUAL-SKIN:35542.9 
+03-29 18:48:54.229  2332  2552 D TemperatureStateSource: getDeviceTemperatures: sequence=42328 deviceTemperatureType=3 temperatureSource=0 temperatures=[35.54289]
+03-29 18:48:54.229  2332  2552 D BusinessScope: Enqueuing the block
+03-29 18:48:54.229  2332  3591 D BusinessScope: Start running the #86130 block
+03-29 18:48:54.230  2332  3591 D BusinessScope: Enqueuing the block
+03-29 18:48:54.230  2332  3591 D ImpulseStateSource: Notify clients: 43052
+03-29 18:48:54.230  2332  3591 D BusinessScope: Finish running the #86130 block
+03-29 18:48:54.230  2332  3591 D BusinessScope: Start running the #86131 block
+03-29 18:48:54.231  2332  3591 D BusinessScope: Finish running the #86131 block
+03-29 18:48:54.231  2332  2552 D TemperatureStateSource: sequence=42328 waitTime=10000
+03-29 18:48:54.573 25850 25995 D AidlBufferPool: bufferpool2 0xb400007702d01248 : 0(0 size) total buffers - 0(0 size) used buffers - 398/403 (recycle/alloc) - 6/788 (fetch/transfer)
+03-29 18:48:54.573 25850 25995 D AidlBufferPoolAcc: evictor expired: 1, evicted: 1
+03-29 18:48:55.311  2124  2134 I deeptouch: I0000 00:00:1774781335.311286    2134 tf_lite_classifier.cc:415] Event stream classified as kNone
+03-29 18:48:55.362  9587  9598 I pixel-thermal: charging_therm:39.118 raw data: charging_therm:39118 
+03-29 18:48:55.365  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE:35.5765 raw data: VIRTUAL-SKIN-CHARGE:35576.5 VIRTUAL-SKIN-CHARGE-SUB-0:35253.7 VIRTUAL-SKIN-CHARGE-SUB-1:35576.5 btmspkr_therm:33375 charging_therm:39118 disp_therm:33709 north_therm:37738 quiet_therm:37626 rfpa_therm:37293 soc_therm:41158 usb_pwr_therm:33330 
+03-29 18:48:55.365  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE power_budget=3906.96 err=2.42346 s_power=2527 time_elapsed_ms=7022 p=288.392 i=1302 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=210.432 (PARTIAL_SYSTEM_POWER: 1753.60 mW, cdev_weight: 0.120000)
+03-29 18:48:55.366  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC:35.6758 raw data: VIRTUAL-SKIN-CHARGE-WLC:35675.8 charging_therm:39118 soc_therm:41158 usb_pwr_therm:33330 
+03-29 18:48:55.366  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC power_budget=3531.79 err=5.32415 s_power=1383 time_elapsed_ms=7022 p=1134.04 i=1383 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=368.257 (PARTIAL_SYSTEM_POWER: 1753.60 mW, cdev_weight: 0.210000)
+03-29 18:48:55.367  9587  9598 I pixel-thermal: Successfully update cdev dc_icl sysfs to 2
+03-29 18:48:55.443  9587  9598 I pixel-thermal: soc_therm:41.158 raw data: soc_therm:41158 
+03-29 18:48:55.587  9587  9598 I pixel-thermal: rfpa_therm:37.293 raw data: rfpa_therm:37293 
+03-29 18:48:55.587  1580  1946 D ActivityManager: freezing 26073 com.google.android.gms.unstable
+03-29 18:48:55.680 28095 28129 D Mbgl-HttpRequest: [HTTP] This request was cancelled (https://tiles.openfreemap.org/planet/20260325_001001_pt/3/6/2.pbf). This is expected for tiles that were being prefetched but are no longer needed for the map to render.
+03-29 18:48:55.688 28095 28183 W Mbgl-HttpRequest: Request failed due to a permanent error: Canceled 
+03-29 18:48:55.760  2124  2134 I deeptouch: I0000 00:00:1774781335.760421    2134 tf_lite_classifier.cc:415] Event stream classified as kNone
+03-29 18:48:55.878  4987  4987 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+03-29 18:48:56.299  1059  1131 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:48:56.325  1059  1131 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:48:56.325  1059  1131 E WifiHAL : Creating message to get cached scan results
+03-29 18:48:56.328  1059  1131 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:48:56.339  4987  4987 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+03-29 18:48:56.341  1059  1131 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:48:56.341  1059  1131 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:48:56.341  1059  1131 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:48:56.341  1059  1131 D WifiHAL : len = 4, expected len = 4
+03-29 18:48:56.343  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:48:56.350  1580  2042 D ConnectivityService: NetReassign [no changes] [c 2] [a 1] [i 2]
+03-29 18:48:56.366 28095 28129 D Mbgl-HttpRequest: [HTTP] This request was cancelled (https://tiles.openfreemap.org/planet/20260325_001001_pt/7/106/54.pbf). This is expected for tiles that were being prefetched but are no longer needed for the map to render.
+03-29 18:48:56.369 28095 28183 W Mbgl-HttpRequest: Request failed due to a permanent error: Canceled 
+03-29 18:48:56.395  2124  2134 I deeptouch: I0000 00:00:1774781336.394945    2134 tf_lite_classifier.cc:415] Event stream classified as kNone
+03-29 18:48:56.599  9587  9598 I pixel-thermal: disp_therm:33.709 raw data: disp_therm:33709 
+03-29 18:48:56.599  9587  9598 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB-MINUS-CHARGER:-5788 VIRTUAL-USB-UI:0 charging_therm:39118 usb_pwr_therm:33330 
+03-29 18:48:56.599  9587  9598 I pixel-thermal: btmspkr_therm:33.375 raw data: btmspkr_therm:33375 
+03-29 18:48:56.599  9587  9598 I pixel-thermal: usb_pwr_therm:33.33 raw data: usb_pwr_therm:33330 
+03-29 18:48:56.600  9587  9598 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB-MINUS-CHARGER:-5788 VIRTUAL-USB-THROTTLING:0 usb_pwr_therm:33330 
+03-29 18:48:57.068  1060  8117 I AF::TrackHandle: opChanged OP_PLAY_AUDIO callback received for 
+03-29 18:48:57.077  1580  4712 D AmbientContextManagerService: Not all events types are wearable events.
+03-29 18:48:57.077  1580  4712 D AmbientContextManagerService: getServiceForType with userid: 0 service type: DEFAULT
+03-29 18:48:57.077  1580  4712 D AmbientContextManagerService: Services that are available: 1 number of services
+03-29 18:48:57.077  1580  4712 D AmbientContextManagerService: Not all events types are wearable events.
+03-29 18:48:57.077  1580  4712 D AmbientContextManagerPerUserService: Query event status of [1, 2] for com.google.android.apps.wellbeing
+03-29 18:48:57.077  1580  4712 I DefaultRemoteAmbientContextDetectionService: Query status for com.google.android.apps.wellbeing
+03-29 18:48:57.080  4987 27778 I FusedLocation: (REDACTED) location delivery to %s blocked - too close
+03-29 18:48:57.080 22124 23158 I AiAiAmbientContext: Events consented
+03-29 18:48:57.080  4987 27778 I FusedLocation: (REDACTED) location delivery to %s blocked - too close
+03-29 18:48:57.081 22124 23158 I AiAiAmbientContext: (REDACTED) [%s] Health nanoapp available: [%b]
+03-29 18:48:57.081  1580  4712 I AmbientContextManagerPerUserService: Got detection status of 1 for com.google.android.apps.wellbeing
+03-29 18:48:57.081  4987 27778 I FusedLocation: (REDACTED) location delivery to %s blocked - too fast
+03-29 18:48:57.082  4987 27778 I FusedLocation: (REDACTED) location delivery to %s blocked - too close
+03-29 18:48:57.086  1580  4712 D AmbientContextManagerService: Not all events types are wearable events.
+03-29 18:48:57.086  1580  4712 D AmbientContextManagerService: getServiceForType with userid: 0 service type: DEFAULT
+03-29 18:48:57.086  1580  4712 D AmbientContextManagerService: Services that are available: 1 number of services
+03-29 18:48:57.086  1580  4712 D AmbientContextManagerService: Not all events types are wearable events.
+03-29 18:48:57.086  1580  4712 D AmbientContextManagerPerUserService: Query event status of [1, 2] for com.google.android.apps.wellbeing
+03-29 18:48:57.086  1580  4712 I DefaultRemoteAmbientContextDetectionService: Query status for com.google.android.apps.wellbeing
+03-29 18:48:57.087 22124 23158 I AiAiAmbientContext: Events consented
+03-29 18:48:57.087 22124 23158 I AiAiAmbientContext: (REDACTED) [%s] Health nanoapp available: [%b]
+03-29 18:48:57.087  1580  4712 I AmbientContextManagerPerUserService: Got detection status of 1 for com.google.android.apps.wellbeing
+03-29 18:48:57.102  2124  2134 I deeptouch: I0000 00:00:1774781337.102361    2134 tf_lite_classifier.cc:415] Event stream classified as kNone
+03-29 18:48:57.106  1580  4685 D AmbientContextManagerService: Not all events types are wearable events.
+03-29 18:48:57.106  1580  4685 D AmbientContextManagerService: getServiceForType with userid: 0 service type: DEFAULT
+03-29 18:48:57.107  1580  4685 D AmbientContextManagerService: Services that are available: 1 number of services
+03-29 18:48:57.107  1580  4685 D AmbientContextManagerService: Not all events types are wearable events.
+03-29 18:48:57.107  1580  4685 D AmbientContextManagerPerUserService: Query event status of [1, 2] for com.google.android.apps.wellbeing
+03-29 18:48:57.107  1580  4685 I DefaultRemoteAmbientContextDetectionService: Query status for com.google.android.apps.wellbeing
+03-29 18:48:57.108 22124 23158 I AiAiAmbientContext: Events consented
+03-29 18:48:57.108 22124 23158 I AiAiAmbientContext: (REDACTED) [%s] Health nanoapp available: [%b]
+03-29 18:48:57.110  1580  4685 I AmbientContextManagerPerUserService: Got detection status of 1 for com.google.android.apps.wellbeing
+03-29 18:48:57.120 26029 26639 E TaskManager: <DWB> Alarm scheduled for PT-1716H-18M-57.119S from now
+03-29 18:48:57.129  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:48:57.133  2133  2133 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.screen.ui.GrayscaleTileService}(0)
+03-29 18:48:57.136  4987 27377 I TFLite-in-PlayServices: Created interpreter.
+03-29 18:48:57.139 26029 26047 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=9f7f0345-c4a0-4b3c-90c1-36b2ca473bf5, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,task_manager_work,TikTokWorker#com.google.android.apps.wellbeing.task.Task } ]
+03-29 18:48:57.147  4987 27377 I SemanticLocation: (REDACTED) [Inferrer] %s%s
+03-29 18:48:57.573  2124  2134 I deeptouch: I0000 00:00:1774781337.573503    2134 tf_lite_classifier.cc:415] Event stream classified as kNone
+03-29 18:48:57.588 28095 28129 D Mbgl-HttpRequest: [HTTP] This request was cancelled (https://tiles.openfreemap.org/planet/20260325_001001_pt/10/858/439.pbf). This is expected for tiles that were being prefetched but are no longer needed for the map to render.
+03-29 18:48:57.591 28095 28196 W Mbgl-HttpRequest: Request failed due to a permanent error: Canceled 
+03-29 18:48:57.698 28095 28129 D Mbgl-HttpRequest: [HTTP] This request was cancelled (https://tiles.openfreemap.org/planet/20260325_001001_pt/10/857/439.pbf). This is expected for tiles that were being prefetched but are no longer needed for the map to render.
+03-29 18:48:57.701 28095 28183 W Mbgl-HttpRequest: Request failed due to a permanent error: Canceled 
+03-29 18:48:57.896  1580  1946 D ActivityManager: freezing 25203 com.google.android.apps.pixel.dcservice
+03-29 18:48:57.907  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:57.908  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:57.908  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10228} in 6ms
+03-29 18:48:57.917   505   626 I hwc-display: Display Temperature : 33°C
+03-29 18:48:58.193  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:58.195  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:58.195  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10306} in 4ms
+03-29 18:48:58.196  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:48:58.202  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:48:58.202  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={20306} in 7ms
+03-29 18:48:58.322  2124  2134 I deeptouch: I0000 00:00:1774781338.322029    2134 tf_lite_classifier.cc:415] Event stream classified as kNone
+03-29 18:48:58.353  1001  1001 W TracingMuxer: type=1400 audit(0.0:619949): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1312 scontext=u:r:hal_neuralnetworks_darwinn:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+03-29 18:48:58.470  1580  4833 D ConnectivityService: Returning BLOCKED NetworkInfo to uid=10198
+03-29 18:48:58.682 28095 28196 V Mbgl-HttpRequest: [HTTP] Request was successful (code = 200).
+03-29 18:48:58.690 28095 28183 V Mbgl-HttpRequest: [HTTP] Request was successful (code = 200).
+03-29 18:48:58.758 28095 28129 D Mbgl-HttpRequest: [HTTP] This request was cancelled (https://tiles.openfreemap.org/planet/20260325_001001_pt/12/3431/1754.pbf). This is expected for tiles that were being prefetched but are no longer needed for the map to render.
+03-29 18:48:58.762 28095 28129 D Mbgl-HttpRequest: [HTTP] This request was cancelled (https://tiles.openfreemap.org/planet/20260325_001001_pt/12/3430/1754.pbf). This is expected for tiles that were being prefetched but are no longer needed for the map to render.
+03-29 18:48:59.344  1059  1131 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:48:59.381  1059  1131 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:48:59.381  1059  1131 E WifiHAL : Creating message to get cached scan results
+03-29 18:48:59.385  1059  1131 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:48:59.407  1059  1131 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:48:59.407  1059  1131 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:48:59.407  1059  1131 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:48:59.407  1059  1131 D WifiHAL : len = 4, expected len = 4
+03-29 18:48:59.407  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:48:59.418  1580  2042 D ConnectivityService: NetReassign [no changes] [c 4] [a 2] [i 4]
+03-29 18:48:59.886  5976  5976 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+03-29 18:48:59.957  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_input: [37515.00 37493.00 39452.00 33264.00 33353.00 33776.00 37871.00 41891.00 ]
+03-29 18:48:59.957  9587  9598 I native  : I0000 00:00:1774781339.957770    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:48:59.958  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_output: [35762.2 ]
+03-29 18:48:59.958  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: predicted_value: [35762.2 ]
+03-29 18:48:59.958  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-MID:35.6306 raw data: VIRTUAL-SKIN:35630.6 VIRTUAL-SKIN-CPU-MID:35630.6 VIRTUAL-SKIN-LEGACY:36227.1 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:464.938 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:35762.2 VIRTUAL-SKIN-MODEL-CLAMPED:35762.2 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-464.938 VIRTUAL-SKIN-MODEL-UPDATED:35630.6 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:35762.2 VIRTUAL-SKIN-SUB-0:35714.7 VIRTUAL-SKIN-SUB-1:35389 VIRTUAL-SKIN-SUB-2:36227.1 VIRTUAL-SKIN-SUB-3:36159.1 VIRTUAL-SKIN-SUB-4:35163.5 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery:35300 btmspkr_therm:33353 charging_therm:39452 disp_therm:33776 north_therm:37871 quiet_therm:37493 rfpa_therm:37515 soc_therm:41891 usb_pwr_therm:33264 
+03-29 18:48:59.958  9587  9598 I pixel-thermal: north_therm:37.871 raw data: north_therm:37871 
+03-29 18:48:59.958  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SOC:35.6306 raw data: VIRTUAL-SKIN:35630.6 VIRTUAL-SKIN-SOC:35630.6 
+03-29 18:48:59.958  9587  9598 I pixel-thermal: VIRTUAL-SKIN-DISPLAY:35.6306 raw data: VIRTUAL-SKIN:35630.6 VIRTUAL-SKIN-DISPLAY:35630.6 
+03-29 18:48:59.958  9587  9598 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:48:59.958  9587  9598 I pixel-thermal: VIRTUAL-SKIN:35.6306 raw data: VIRTUAL-SKIN:35630.6 
+03-29 18:48:59.958  9587  9598 I pixel-thermal: VIRTUAL-SKIN-HINT:35.6306 raw data: VIRTUAL-SKIN:35630.6 VIRTUAL-SKIN-HINT:35630.6 
+03-29 18:48:59.958  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-LIGHT-ODPM:35.6306 raw data: VIRTUAL-SKIN:35630.6 VIRTUAL-SKIN-CPU-LIGHT-ODPM:35630.6 
+03-29 18:48:59.958  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-ODPM:35.6306 raw data: VIRTUAL-SKIN:35630.6 VIRTUAL-SKIN-CPU-ODPM:35630.6 
+03-29 18:48:59.959  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_input: [37515.00 37493.00 39452.00 33264.00 33353.00 33776.00 37871.00 41891.00 35300.00 1315.17 10.02 352.12 47.31 2.62 94.04 ]
+03-29 18:48:59.959  9587  9598 I native  : I0000 00:00:1774781339.959059    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:48:59.959  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_output: [34329.7 ]
+03-29 18:48:59.959  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: predicted_value: [34329.7 ]
+03-29 18:48:59.959  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_input: [35300.00 33353.00 39452.00 33776.00 37871.00 37493.00 37515.00 41891.00 33264.00 ]
+03-29 18:48:59.959  9587  9598 I native  : I0000 00:00:1774781339.959644    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:48:59.959  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_output: [33670 ]
+03-29 18:48:59.959  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: predicted_value: [33670 ]
+03-29 18:48:59.959  9587  9598 I pixel-thermal: STATS-UPDATOR:0 raw data: EXTREME-SOC-CONDITION-CHECK:0 MAIN_SOC_POWER:1113.32 MODEL_CAMERA_PWR:10.0245 MODEL_DISPLAY_PWR:352.119 MODEL_MISC_PWR:1315.17 MODEL_MODEM_PWR:47.3055 MODEL_RFFE_PWR:2.6196 MODEL_WLAN_BT_PWR:94.0396 NORTH_THERM-UNDER-THRESHOLD:1 NORTH_THERM-VSKIN-DIFF-DURING-NORTH_THERM-OVER-THRESHOLD:-997760 NORTH_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-997760 QUIET_THERM-UNDER-THRESHOLD:1 QUIET_THERM-VSKIN-DIFF-DURING-QUIET_THERM-OVER-THRESHOLD:-998138 QUIET_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998138 RFPA_THERM-UNDER-THRESHOLD:1 RFPA_THERM-VSKIN-DIFF-DURING-RFPA_THERM-OVER-THRESHOLD:-998116 RFPA_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998116 SOC_THERM-UNDER-THRESHOLD:1 SOC_THERM-VSKIN-DIFF-DURING-SOC_THERM-OVER-THRESHOLD:-993740 SOC_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-993740 STATS-UPDATOR:0 TPU_35S:0 VIRTUAL-SKIN:35630.6 VIRTUAL-SKIN-LEGACY:36227.1 VIRTUAL-SKIN-MODEL:35762.2 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-464.938 VIRTUAL-SKIN-ODPM-MODEL:34329.7 VIRTUAL-SKIN-SPEAKER-MODEL:33670 VSKIN-SKIN-UNDER-52:1 battery:35300 btmspkr_therm:33353 charging_therm:39452 disp_therm:33776 north_therm:37871 quiet_therm:37493 rfpa_therm:37515 soc_therm:41891 usb_pwr_therm:33264 
+03-29 18:48:59.959  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-HIGH:35.6306 raw data: VIRTUAL-SKIN:35630.6 VIRTUAL-SKIN-CPU-HIGH:35630.6 
+03-29 18:48:59.960  9587  9598 I pixel-thermal: quiet_therm:37.493 raw data: quiet_therm:37493 
+03-29 18:48:59.960  9587  9598 I pixel-thermal: cellular-emergency:35.6306 raw data: VIRTUAL-SKIN:35630.6 cellular-emergency:35630.6 
+03-29 18:49:01.001  4987 28188 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+03-29 18:49:01.001  4987 28188 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+03-29 18:49:02.365  9587  9598 I pixel-thermal: charging_therm:39.452 raw data: charging_therm:39452 
+03-29 18:49:02.367  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE:35.6696 raw data: VIRTUAL-SKIN-CHARGE:35669.6 VIRTUAL-SKIN-CHARGE-SUB-0:35318.6 VIRTUAL-SKIN-CHARGE-SUB-1:35669.6 btmspkr_therm:33353 charging_therm:39452 disp_therm:33776 north_therm:37871 quiet_therm:37493 rfpa_therm:37515 soc_therm:41891 usb_pwr_therm:33264 
+03-29 18:49:02.367  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE power_budget=3856.09 err=2.33043 s_power=2527 time_elapsed_ms=7016 p=277.322 i=1302 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=250.233 (PARTIAL_SYSTEM_POWER: 2085.28 mW, cdev_weight: 0.120000)
+03-29 18:49:02.367  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC:35.9034 raw data: VIRTUAL-SKIN-CHARGE-WLC:35903.4 charging_therm:39452 soc_therm:41891 usb_pwr_therm:33264 
+03-29 18:49:02.368  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC power_budget=3413.68 err=5.09665 s_power=1383 time_elapsed_ms=7016 p=1085.59 i=1383 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=437.908 (PARTIAL_SYSTEM_POWER: 2085.28 mW, cdev_weight: 0.210000)
+03-29 18:49:02.370  9587  9598 I pixel-thermal: Successfully update cdev dc_icl sysfs to 3
+03-29 18:49:02.408  1059  1131 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:49:02.450  1059  1131 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:49:02.450  1059  1131 E WifiHAL : Creating message to get cached scan results
+03-29 18:49:02.460  9587  9598 I pixel-thermal: soc_therm:41.891 raw data: soc_therm:41891 
+03-29 18:49:02.462  1059  1131 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:49:02.487  1059  1131 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:49:02.487  1059  1131 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:49:02.487  1059  1131 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:49:02.487  1059  1131 D WifiHAL : len = 4, expected len = 4
+03-29 18:49:02.488  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:49:02.498  1580  2042 D ConnectivityService: NetReassign [no changes] [c 3] [a 2] [i 4]
+03-29 18:49:02.584  9587  9598 I pixel-thermal: rfpa_therm:37.515 raw data: rfpa_therm:37515 
+03-29 18:49:02.613 30714  4985 I emwq    : (REDACTED) appOpsListener %s %s
+03-29 18:49:02.613 30714  4985 I emwq    : (REDACTED) Ignoring irrelevant audio permission changes for package %s
+03-29 18:49:02.849  1580  1938 I JobServiceContext: Letting 4174940 #u0a178/10001 com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground continue to run past min execution time
+03-29 18:49:02.850  1580  1938 W AnrTimerService: error: canceling id=798098 pid=0 uid=10178 status=expired
+03-29 18:49:02.934  4987  4987 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+03-29 18:49:02.937  4987  4987 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+03-29 18:49:03.204  1580  1946 D ActivityManager: freezing 27845 com.google.android.apps.fitness
+03-29 18:49:03.210  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:49:03.212  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:49:03.212  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10306} in 3ms
+03-29 18:49:03.588  9587  9598 I pixel-thermal: disp_therm:33.776 raw data: disp_therm:33776 
+03-29 18:49:03.588  9587  9598 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB-MINUS-CHARGER:-6188 VIRTUAL-USB-UI:0 charging_therm:39452 usb_pwr_therm:33264 
+03-29 18:49:03.588  9587  9598 I pixel-thermal: btmspkr_therm:33.353 raw data: btmspkr_therm:33353 
+03-29 18:49:03.588  9587  9598 I pixel-thermal: usb_pwr_therm:33.264 raw data: usb_pwr_therm:33264 
+03-29 18:49:03.588  9587  9598 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB-MINUS-CHARGER:-6188 VIRTUAL-USB-THROTTLING:0 usb_pwr_therm:33264 
+03-29 18:49:04.231  2332  2544 D TemperatureStateSource: sequence=42328 actualDelay=10000
+03-29 18:49:04.231  2332  2544 D TemperatureStateSource: Reading temperature: sequence=42329
+03-29 18:49:04.233  9587  9587 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:49:04.233  9587  9587 I pixel-thermal: VIRTUAL-SKIN:35.6832 raw data: VIRTUAL-SKIN:35683.2 VIRTUAL-SKIN-LEGACY:36229.8 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:467.637 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:35762.2 VIRTUAL-SKIN-MODEL-CLAMPED:35762.2 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-467.637 VIRTUAL-SKIN-MODEL-UPDATED:35683.2 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:35762.2 VIRTUAL-SKIN-SUB-0:35716.6 VIRTUAL-SKIN-SUB-1:35402.6 VIRTUAL-SKIN-SUB-2:36229.8 VIRTUAL-SKIN-SUB-3:36163.9 VIRTUAL-SKIN-SUB-4:35196.7 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery:35400 btmspkr_therm:33353 charging_therm:39452 disp_therm:33776 north_therm:37871 quiet_therm:37493 rfpa_therm:37515 soc_therm:41891 usb_pwr_therm:33264 
+03-29 18:49:04.233  2332  2544 D TemperatureStateSource: getDeviceTemperatures: sequence=42329 deviceTemperatureType=3 temperatureSource=0 temperatures=[35.68323]
+03-29 18:49:04.233  2332  2544 D BusinessScope: Enqueuing the block
+03-29 18:49:04.233  2332  2544 D TemperatureStateSource: sequence=42329 waitTime=10000
+03-29 18:49:04.233  2332  2631 D BusinessScope: Start running the #86132 block
+03-29 18:49:04.233  2332  2631 D BusinessScope: Enqueuing the block
+03-29 18:49:04.233  2332  2631 D ImpulseStateSource: Notify clients: 43053
+03-29 18:49:04.234  2332  2631 D BusinessScope: Finish running the #86132 block
+03-29 18:49:04.234  2332  2631 D BusinessScope: Start running the #86133 block
+03-29 18:49:04.234  2332  2631 D BusinessScope: Finish running the #86133 block
+03-29 18:49:04.238  1580  1946 D ActivityManager: freezing 28784 com.google.android.apps.turbo
+03-29 18:49:04.242  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:49:04.245  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:49:04.245  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10135} in 5ms
+03-29 18:49:05.492  1059  1131 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:49:05.537  1059  3044 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:49:05.537  1059  3044 E WifiHAL : Creating message to get cached scan results
+03-29 18:49:05.544  1059  3044 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:49:05.568  1059  3044 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:49:05.568  1059  3044 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:49:05.568  1059  3044 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:49:05.568  1059  3044 D WifiHAL : len = 4, expected len = 4
+03-29 18:49:05.569  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:49:05.575  1580  2042 D ConnectivityService: NetReassign [no changes] [c 2] [a 1] [i 3]
+03-29 18:49:06.616  1580  2042 D InetDiagMessage: Destroyed 1 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:49:06.618  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:49:06.618  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10281} in 4ms
+03-29 18:49:06.620  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:49:06.621 26663 26961 E msys    : E[N MQTT]readErr(151)=>TCPStreamTransport readErr
+03-29 18:49:06.621 26663 26961 E msys    : E[N MQTT]onReadError(657)=>Read Error: AsyncSocketException: recv() failed (peer=31.13.87.9:443), type = Internal error, errno = 103 (Software caused connection abort)
+03-29 18:49:06.621  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:49:06.621  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={20281} in 3ms
+03-29 18:49:06.625  1580  4685 D ConnectivityService: Returning BLOCKED NetworkInfo to uid=10281
+03-29 18:49:06.629 26663 26783 W RealtimeClientManager: Channel state: MqttChannelState{mConnectionState=DISCONNECTED, mDisconnectionReason=null, mLastConnectionMs=1389772141, mLastDisconnectMs=1389958968}
+03-29 18:49:06.646 26663 26783 W RealtimeClientManager: Channel state: MqttChannelState{mConnectionState=CONNECTING, mDisconnectionReason=null, mLastConnectionMs=1389772141, mLastDisconnectMs=1389958968}
+03-29 18:49:06.649 26663 26961 E msys    : E[N MQTT]onOSNetworkDisconnected(740)=>LigerBasedStreamTransport onOSNetworkDisconnected
+03-29 18:49:06.656 26663 26783 W RealtimeClientManager: Channel state: MqttChannelState{mConnectionState=DISCONNECTED, mDisconnectionReason=null, mLastConnectionMs=1389772141, mLastDisconnectMs=1389958996}
+03-29 18:49:06.971  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_input: [37649.00 37537.00 39830.00 33264.00 33308.00 33798.00 38161.00 43174.00 ]
+03-29 18:49:06.972  9587  9598 I native  : I0000 00:00:1774781346.971971    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_output: [35915.9 ]
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: predicted_value: [35915.9 ]
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-MID:35.7763 raw data: VIRTUAL-SKIN:35776.3 VIRTUAL-SKIN-CPU-MID:35776.3 VIRTUAL-SKIN-LEGACY:36535.6 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:619.777 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:35915.9 VIRTUAL-SKIN-MODEL-CLAMPED:35915.9 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-619.777 VIRTUAL-SKIN-MODEL-UPDATED:35776.3 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:35915.9 VIRTUAL-SKIN-SUB-0:36072.2 VIRTUAL-SKIN-SUB-1:35483.9 VIRTUAL-SKIN-SUB-2:36535.6 VIRTUAL-SKIN-SUB-3:36363.7 VIRTUAL-SKIN-SUB-4:35258.1 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery:35400 btmspkr_therm:33308 charging_therm:39830 disp_therm:33798 north_therm:38161 quiet_therm:37537 rfpa_therm:37649 soc_therm:43174 usb_pwr_therm:33264 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: north_therm:38.161 raw data: north_therm:38161 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SOC:35.7763 raw data: VIRTUAL-SKIN:35776.3 VIRTUAL-SKIN-SOC:35776.3 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-DISPLAY:35.7763 raw data: VIRTUAL-SKIN:35776.3 VIRTUAL-SKIN-DISPLAY:35776.3 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN:35.7763 raw data: VIRTUAL-SKIN:35776.3 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-HINT:35.7763 raw data: VIRTUAL-SKIN:35776.3 VIRTUAL-SKIN-HINT:35776.3 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-LIGHT-ODPM:35.7763 raw data: VIRTUAL-SKIN:35776.3 VIRTUAL-SKIN-CPU-LIGHT-ODPM:35776.3 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-ODPM:35.7763 raw data: VIRTUAL-SKIN:35776.3 VIRTUAL-SKIN-CPU-ODPM:35776.3 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_input: [37649.00 37537.00 39830.00 33264.00 33308.00 33798.00 38161.00 43174.00 35400.00 1347.42 10.03 358.24 47.58 2.63 90.57 ]
+03-29 18:49:06.972  9587  9598 I native  : I0000 00:00:1774781346.972567    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_output: [34653 ]
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: predicted_value: [34653 ]
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_input: [35400.00 33308.00 39830.00 33798.00 38161.00 37537.00 37649.00 43174.00 33264.00 ]
+03-29 18:49:06.972  9587  9598 I native  : I0000 00:00:1774781346.972763    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_output: [33872.7 ]
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: predicted_value: [33872.7 ]
+03-29 18:49:06.972  9587  9598 I pixel-thermal: STATS-UPDATOR:0 raw data: EXTREME-SOC-CONDITION-CHECK:0 MAIN_SOC_POWER:1427.82 MODEL_CAMERA_PWR:10.0284 MODEL_DISPLAY_PWR:358.235 MODEL_MISC_PWR:1347.42 MODEL_MODEM_PWR:47.5802 MODEL_RFFE_PWR:2.62728 MODEL_WLAN_BT_PWR:90.5663 NORTH_THERM-UNDER-THRESHOLD:1 NORTH_THERM-VSKIN-DIFF-DURING-NORTH_THERM-OVER-THRESHOLD:-997615 NORTH_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-997615 QUIET_THERM-UNDER-THRESHOLD:1 QUIET_THERM-VSKIN-DIFF-DURING-QUIET_THERM-OVER-THRESHOLD:-998239 QUIET_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998239 RFPA_THERM-UNDER-THRESHOLD:1 RFPA_THERM-VSKIN-DIFF-DURING-RFPA_THERM-OVER-THRESHOLD:-998127 RFPA_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998127 SOC_THERM-UNDER-THRESHOLD:1 SOC_THERM-VSKIN-DIFF-DURING-SOC_THERM-OVER-THRESHOLD:-992602 SOC_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-992602 STATS-UPDATOR:0 TPU_35S:0 VIRTUAL-SKIN:35776.3 VIRTUAL-SKIN-LEGACY:36535.6 VIRTUAL-SKIN-MODEL:35915.9 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-619.777 VIRTUAL-SKIN-ODPM-MODEL:34653 VIRTUAL-SKIN-SPEAKER-MODEL:33872.7 VSKIN-SKIN-UNDER-52:1 battery:35400 btmspkr_therm:33308 charging_therm:39830 disp_therm:33798 north_therm:38161 quiet_therm:37537 rfpa_therm:37649 soc_therm:43174 usb_pwr_therm:33264 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-HIGH:35.7763 raw data: VIRTUAL-SKIN:35776.3 VIRTUAL-SKIN-CPU-HIGH:35776.3 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: quiet_therm:37.537 raw data: quiet_therm:37537 
+03-29 18:49:06.972  9587  9598 I pixel-thermal: cellular-emergency:35.7763 raw data: VIRTUAL-SKIN:35776.3 cellular-emergency:35776.3 
+03-29 18:49:06.990  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:49:06.991  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:49:06.991  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10120} in 3ms
+03-29 18:49:06.992  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:49:06.993  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:49:06.993  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={20120} in 2ms
+03-29 18:49:07.659 26663 26783 W RealtimeClientManager: Channel state: MqttChannelState{mConnectionState=CONNECTING, mDisconnectionReason=null, mLastConnectionMs=1389772141, mLastDisconnectMs=1389958996}
+03-29 18:49:08.572  1059  1131 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:49:08.610  1059  3044 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:49:08.610  1059  3044 E WifiHAL : Creating message to get cached scan results
+03-29 18:49:08.615  1059  3044 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:49:08.638  1059  3044 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:49:08.638  1059  3044 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:49:08.638  1059  3044 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:49:08.638  1059  3044 D WifiHAL : len = 4, expected len = 4
+03-29 18:49:08.639  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:49:08.641  1580  2042 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 1]
+03-29 18:49:09.409  9587  9598 I pixel-thermal: charging_therm:39.83 raw data: charging_therm:39830 
+03-29 18:49:09.410  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE:35.8522 raw data: VIRTUAL-SKIN-CHARGE:35852.2 VIRTUAL-SKIN-CHARGE-SUB-0:35439.8 VIRTUAL-SKIN-CHARGE-SUB-1:35852.2 btmspkr_therm:33308 charging_therm:39830 disp_therm:33798 north_therm:38161 quiet_therm:37537 rfpa_therm:37649 soc_therm:43174 usb_pwr_therm:33264 
+03-29 18:49:09.410  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE power_budget=3809.84 err=2.14782 s_power=2527 time_elapsed_ms=7019 p=255.591 i=1302 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=274.754 (PARTIAL_SYSTEM_POWER: 2289.61 mW, cdev_weight: 0.120000)
+03-29 18:49:09.410  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC:36.2963 raw data: VIRTUAL-SKIN-CHARGE-WLC:36296.3 charging_therm:39830 soc_therm:43174 usb_pwr_therm:33264 
+03-29 18:49:09.411  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC power_budget=3287.06 err=4.70366 s_power=1383 time_elapsed_ms=7019 p=1001.88 i=1383 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=480.819 (PARTIAL_SYSTEM_POWER: 2289.61 mW, cdev_weight: 0.210000)
+03-29 18:49:09.415  9587  9598 I pixel-thermal: Successfully update cdev dc_icl sysfs to 4
+03-29 18:49:09.482  9587  9598 I pixel-thermal: soc_therm:43.174 raw data: soc_therm:43174 
+03-29 18:49:09.596  9587  9598 I pixel-thermal: rfpa_therm:37.649 raw data: rfpa_therm:37649 
+03-29 18:49:10.599  9587  9598 I pixel-thermal: disp_therm:33.798 raw data: disp_therm:33798 
+03-29 18:49:10.599  9587  9598 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB-MINUS-CHARGER:-6566 VIRTUAL-USB-UI:0 charging_therm:39830 usb_pwr_therm:33264 
+03-29 18:49:10.600  9587  9598 I pixel-thermal: btmspkr_therm:33.308 raw data: btmspkr_therm:33308 
+03-29 18:49:10.600  9587  9598 I pixel-thermal: usb_pwr_therm:33.264 raw data: usb_pwr_therm:33264 
+03-29 18:49:10.600  9587  9598 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB-MINUS-CHARGER:-6566 VIRTUAL-USB-THROTTLING:0 usb_pwr_therm:33264 
+03-29 18:49:11.002  4987 28189 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+03-29 18:49:11.002  4987 28189 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+03-29 18:49:11.640  1580  1946 D ActivityManager: freezing 26663 com.instagram.android
+03-29 18:49:11.641  1059  3044 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:49:11.648  1580  2042 D InetDiagMessage: Destroyed 1 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:49:11.649  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:49:11.649  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10281} in 1ms
+03-29 18:49:11.689  1059  3044 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:49:11.690  1059  3044 E WifiHAL : Creating message to get cached scan results
+03-29 18:49:11.693  1059  3044 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:49:11.716  1059  3044 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:49:11.716  1059  3044 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:49:11.716  1059  3044 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:49:11.716  1059  3044 D WifiHAL : len = 4, expected len = 4
+03-29 18:49:11.716  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:49:13.122  4987  4987 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+03-29 18:49:13.983  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_input: [37805.00 37626.00 40142.00 33353.00 33330.00 33820.00 38361.00 43838.00 ]
+03-29 18:49:13.983  9587  9598 I native  : I0000 00:00:1774781353.983477    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:13.983  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_output: [36169.9 ]
+03-29 18:49:13.983  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: predicted_value: [36169.9 ]
+03-29 18:49:13.984  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-MID:35.9338 raw data: VIRTUAL-SKIN:35933.8 VIRTUAL-SKIN-CPU-MID:35933.8 VIRTUAL-SKIN-LEGACY:36736.3 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:566.344 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:36169.9 VIRTUAL-SKIN-MODEL-CLAMPED:36169.9 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-566.344 VIRTUAL-SKIN-MODEL-UPDATED:35933.8 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:36169.9 VIRTUAL-SKIN-SUB-0:36304.6 VIRTUAL-SKIN-SUB-1:35581.4 VIRTUAL-SKIN-SUB-2:36736.3 VIRTUAL-SKIN-SUB-3:36521.6 VIRTUAL-SKIN-SUB-4:35364.3 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery:35500 btmspkr_therm:33330 charging_therm:40142 disp_therm:33820 north_therm:38361 quiet_therm:37626 rfpa_therm:37805 soc_therm:43838 usb_pwr_therm:33353 
+03-29 18:49:13.984  9587  9598 I pixel-thermal: north_therm:38.361 raw data: north_therm:38361 
+03-29 18:49:13.984  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SOC:35.9338 raw data: VIRTUAL-SKIN:35933.8 VIRTUAL-SKIN-SOC:35933.8 
+03-29 18:49:13.984  9587  9598 I pixel-thermal: VIRTUAL-SKIN-DISPLAY:35.9338 raw data: VIRTUAL-SKIN:35933.8 VIRTUAL-SKIN-DISPLAY:35933.8 
+03-29 18:49:13.984  9587  9598 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:49:13.984  9587  9598 I pixel-thermal: VIRTUAL-SKIN:35.9338 raw data: VIRTUAL-SKIN:35933.8 
+03-29 18:49:13.984  9587  9598 I pixel-thermal: VIRTUAL-SKIN-HINT:35.9338 raw data: VIRTUAL-SKIN:35933.8 VIRTUAL-SKIN-HINT:35933.8 
+03-29 18:49:13.984  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-LIGHT-ODPM:35.9338 raw data: VIRTUAL-SKIN:35933.8 VIRTUAL-SKIN-CPU-LIGHT-ODPM:35933.8 
+03-29 18:49:13.984  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-ODPM:35.9338 raw data: VIRTUAL-SKIN:35933.8 VIRTUAL-SKIN-CPU-ODPM:35933.8 
+03-29 18:49:13.984  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_input: [37805.00 37626.00 40142.00 33353.00 33330.00 33820.00 38361.00 43838.00 35500.00 1374.46 10.00 364.98 47.84 2.60 86.42 ]
+03-29 18:49:13.985  9587  9598 I native  : I0000 00:00:1774781353.985030    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:13.985  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_output: [34961.6 ]
+03-29 18:49:13.985  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: predicted_value: [34961.6 ]
+03-29 18:49:13.985  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_input: [35500.00 33330.00 40142.00 33820.00 38361.00 37626.00 37805.00 43838.00 33353.00 ]
+03-29 18:49:13.985  9587  9598 I native  : I0000 00:00:1774781353.985650    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:13.985  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_output: [34081.8 ]
+03-29 18:49:13.985  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: predicted_value: [34081.8 ]
+03-29 18:49:13.985  9587  9598 I pixel-thermal: STATS-UPDATOR:0 raw data: EXTREME-SOC-CONDITION-CHECK:0 MAIN_SOC_POWER:1625.65 MODEL_CAMERA_PWR:10.0029 MODEL_DISPLAY_PWR:364.976 MODEL_MISC_PWR:1374.46 MODEL_MODEM_PWR:47.8369 MODEL_RFFE_PWR:2.59979 MODEL_WLAN_BT_PWR:86.4172 NORTH_THERM-UNDER-THRESHOLD:1 NORTH_THERM-VSKIN-DIFF-DURING-NORTH_THERM-OVER-THRESHOLD:-997573 NORTH_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-997573 QUIET_THERM-UNDER-THRESHOLD:1 QUIET_THERM-VSKIN-DIFF-DURING-QUIET_THERM-OVER-THRESHOLD:-998308 QUIET_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998308 RFPA_THERM-UNDER-THRESHOLD:1 RFPA_THERM-VSKIN-DIFF-DURING-RFPA_THERM-OVER-THRESHOLD:-998129 RFPA_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998129 SOC_THERM-UNDER-THRESHOLD:1 SOC_THERM-VSKIN-DIFF-DURING-SOC_THERM-OVER-THRESHOLD:-992096 SOC_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-992096 STATS-UPDATOR:0 TPU_35S:0 VIRTUAL-SKIN:35933.8 VIRTUAL-SKIN-LEGACY:36736.3 VIRTUAL-SKIN-MODEL:36169.9 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-566.344 VIRTUAL-SKIN-ODPM-MODEL:34961.6 VIRTUAL-SKIN-SPEAKER-MODEL:34081.8 VSKIN-SKIN-UNDER-52:1 battery:35500 btmspkr_therm:33330 charging_therm:40142 disp_therm:33820 north_therm:38361 quiet_therm:37626 rfpa_therm:37805 soc_therm:43838 usb_pwr_therm:33353 
+03-29 18:49:13.986  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-HIGH:35.9338 raw data: VIRTUAL-SKIN:35933.8 VIRTUAL-SKIN-CPU-HIGH:35933.8 
+03-29 18:49:13.986  9587  9598 I pixel-thermal: quiet_therm:37.626 raw data: quiet_therm:37626 
+03-29 18:49:13.986  9587  9598 I pixel-thermal: cellular-emergency:35.9338 raw data: VIRTUAL-SKIN:35933.8 cellular-emergency:35933.8 
+03-29 18:49:14.234  2332  2631 D TemperatureStateSource: sequence=42329 actualDelay=10000
+03-29 18:49:14.234  2332  2631 D TemperatureStateSource: Reading temperature: sequence=42330
+03-29 18:49:14.235  9587  9587 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:49:14.236  9587  9587 I pixel-thermal: VIRTUAL-SKIN:35.9338 raw data: VIRTUAL-SKIN:35933.8 
+03-29 18:49:14.236  2332  2631 D TemperatureStateSource: getDeviceTemperatures: sequence=42330 deviceTemperatureType=3 temperatureSource=0 temperatures=[35.93375]
+03-29 18:49:14.236  2332  2631 D BusinessScope: Enqueuing the block
+03-29 18:49:14.236  2332  2631 D TemperatureStateSource: sequence=42330 waitTime=10000
+03-29 18:49:14.237  2332  2552 D BusinessScope: Start running the #86134 block
+03-29 18:49:14.238  9587  9587 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:49:14.238  9587  9587 I pixel-thermal: VIRTUAL-SKIN:35.9338 raw data: VIRTUAL-SKIN:35933.8 
+03-29 18:49:14.238  2332  2552 I TemperatureStateSource: temperature was set
+03-29 18:49:14.239  2332  2552 D BusinessScope: Enqueuing the block
+03-29 18:49:14.239  2332  2552 D ImpulseStateSource: Notify clients: 43054
+03-29 18:49:14.239  2332  2552 D BusinessScope: Finish running the #86134 block
+03-29 18:49:14.239  2332  2552 D BusinessScope: Start running the #86135 block
+03-29 18:49:14.239  2332  2552 D ImpulseConnection: bindService: com.google.android.apps.turbo
+03-29 18:49:14.243  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:49:14.247  1580  4685 D ActivityManager: sync unfroze 28784 com.google.android.apps.turbo for 6
+03-29 18:49:14.248  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:49:14.274  2332  2332 D ImpulseConnection: onServiceConnected: ComponentInfo{com.google.android.apps.turbo/com.google.android.apps.turbo.adaptiveplatform.impulse.ImpulseClientService} service is null false
+03-29 18:49:14.274  2332  2552 D BusinessScope: Finish running the #86135 block
+03-29 18:49:14.276  1580  4685 W ProcessStats: Tracking association SourceState{23427dc com.google.android.pixelsystemservice/10251 ImpFg #1277251} whose proc state 5 is better than process ProcessState{e942da8 com.google.android.apps.turbo/10135 pkg=com.google.android.apps.turbo} proc state 14 (288 skipped)
+03-29 18:49:14.292 28784 23179 W Turbo.DeviceHealthLeversManagerImpl: applyLeversWithMaintenanceWindow: ignore the same request
+03-29 18:49:14.718  1059  3044 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:49:14.766  1059  1131 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:49:14.766  1059  1131 E WifiHAL : Creating message to get cached scan results
+03-29 18:49:14.770  1059  1131 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:49:14.792  1059  1131 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:49:14.792  1059  1131 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:49:14.792  1059  1131 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:49:14.792  1059  1131 D WifiHAL : len = 4, expected len = 4
+03-29 18:49:14.793  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:49:14.794  1580  2042 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 1]
+03-29 18:49:15.220  1580  1946 D ActivityManager: freezing 22555 com.android.settings
+03-29 18:49:15.226  1580  1946 D ActivityManager: freezing 27253 com.android.keychain
+03-29 18:49:16.415  9587  9598 I pixel-thermal: charging_therm:40.298 raw data: charging_therm:40298 
+03-29 18:49:16.418  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE:36.119 raw data: VIRTUAL-SKIN-CHARGE:36119 VIRTUAL-SKIN-CHARGE-SUB-0:35659.8 VIRTUAL-SKIN-CHARGE-SUB-1:36119 btmspkr_therm:33375 charging_therm:40298 disp_therm:33842 north_therm:38561 quiet_therm:37715 rfpa_therm:37983 soc_therm:44182 usb_pwr_therm:33286 
+03-29 18:49:16.419  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE power_budget=3760.55 err=1.88103 s_power=2527 time_elapsed_ms=7020 p=223.843 i=1302 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=292.294 (PARTIAL_SYSTEM_POWER: 2435.78 mW, cdev_weight: 0.120000)
+03-29 18:49:16.419  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC:36.6586 raw data: VIRTUAL-SKIN-CHARGE-WLC:36658.6 charging_therm:40298 soc_therm:44182 usb_pwr_therm:33286 
+03-29 18:49:16.419  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC power_budget=3179.21 err=4.34141 s_power=1383 time_elapsed_ms=7020 p=924.72 i=1383 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=511.514 (PARTIAL_SYSTEM_POWER: 2435.78 mW, cdev_weight: 0.210000)
+03-29 18:49:16.497  9587  9598 I pixel-thermal: soc_therm:44.182 raw data: soc_therm:44182 
+03-29 18:49:16.602  9587  9598 I pixel-thermal: rfpa_therm:37.983 raw data: rfpa_therm:37983 
+03-29 18:49:16.984  1580  1946 D ActivityManager: freezing 26029 com.google.android.apps.wellbeing
+03-29 18:49:16.989  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-29 18:49:16.989  1580  2042 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-29 18:49:16.989  1580  2042 D InetDiagMessage: Destroyed live tcp sockets for uids={10120} in 1ms
+03-29 18:49:17.412  1580  1719 D AppOpHistoryHelper: MetricHandler reporting 29 records.
+03-29 18:49:17.615  9587  9598 I pixel-thermal: disp_therm:33.842 raw data: disp_therm:33842 
+03-29 18:49:17.616  9587  9598 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB-MINUS-CHARGER:-7012 VIRTUAL-USB-UI:0 charging_therm:40298 usb_pwr_therm:33286 
+03-29 18:49:17.616  9587  9598 I pixel-thermal: btmspkr_therm:33.375 raw data: btmspkr_therm:33375 
+03-29 18:49:17.616  9587  9598 I pixel-thermal: usb_pwr_therm:33.286 raw data: usb_pwr_therm:33286 
+03-29 18:49:17.616  9587  9598 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB-MINUS-CHARGER:-7012 VIRTUAL-USB-THROTTLING:0 usb_pwr_therm:33286 
+03-29 18:49:17.796  1059  1131 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:49:17.831  1059  1131 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:49:17.831  1059  1131 E WifiHAL : Creating message to get cached scan results
+03-29 18:49:17.835  1059  1131 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:49:17.854  1059  1131 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:49:17.854  1059  1131 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:49:17.854  1059  1131 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:49:17.854  1059  1131 D WifiHAL : len = 4, expected len = 4
+03-29 18:49:17.855  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:49:20.857  1059  1131 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:49:20.901  1059  3044 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:49:20.901  1059  3044 E WifiHAL : Creating message to get cached scan results
+03-29 18:49:20.905  1059  3044 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:49:20.929  1059  3044 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:49:20.929  1059  3044 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:49:20.929  1059  3044 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:49:20.929  1059  3044 D WifiHAL : len = 4, expected len = 4
+03-29 18:49:20.931  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:49:20.940  1580  2042 D ConnectivityService: NetReassign [no changes] [c 2] [a 2] [i 4]
+03-29 18:49:21.000  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_input: [37983.00 37715.00 40298.00 33286.00 33375.00 33842.00 38561.00 44182.00 ]
+03-29 18:49:21.000  9587  9598 I native  : I0000 00:00:1774781361.000139    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:21.000  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_output: [36374.3 ]
+03-29 18:49:21.000  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: predicted_value: [36374.3 ]
+03-29 18:49:21.000  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-MID:36.11 raw data: VIRTUAL-SKIN:36110 VIRTUAL-SKIN-CPU-MID:36110 VIRTUAL-SKIN-LEGACY:36894.7 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:520.379 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:36374.3 VIRTUAL-SKIN-MODEL-CLAMPED:36374.3 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-520.379 VIRTUAL-SKIN-MODEL-UPDATED:36110 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:36374.3 VIRTUAL-SKIN-SUB-0:36459.8 VIRTUAL-SKIN-SUB-1:35648.4 VIRTUAL-SKIN-SUB-2:36894.7 VIRTUAL-SKIN-SUB-3:36640.1 VIRTUAL-SKIN-SUB-4:35386.1 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery:35500 btmspkr_therm:33375 charging_therm:40298 disp_therm:33842 north_therm:38561 quiet_therm:37715 rfpa_therm:37983 soc_therm:44182 usb_pwr_therm:33286 
+03-29 18:49:21.001  9587  9598 I pixel-thermal: north_therm:38.561 raw data: north_therm:38561 
+03-29 18:49:21.001  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SOC:36.11 raw data: VIRTUAL-SKIN:36110 VIRTUAL-SKIN-SOC:36110 
+03-29 18:49:21.001  9587  9598 I pixel-thermal: VIRTUAL-SKIN-DISPLAY:36.11 raw data: VIRTUAL-SKIN:36110 VIRTUAL-SKIN-DISPLAY:36110 
+03-29 18:49:21.001  9587  9598 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:49:21.001  9587  9598 I pixel-thermal: VIRTUAL-SKIN:36.11 raw data: VIRTUAL-SKIN:36110 
+03-29 18:49:21.001  9587  9598 I pixel-thermal: VIRTUAL-SKIN-HINT:36.11 raw data: VIRTUAL-SKIN:36110 VIRTUAL-SKIN-HINT:36110 
+03-29 18:49:21.001  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-LIGHT-ODPM:36.11 raw data: VIRTUAL-SKIN:36110 VIRTUAL-SKIN-CPU-LIGHT-ODPM:36110 
+03-29 18:49:21.001  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-ODPM:36.11 raw data: VIRTUAL-SKIN:36110 VIRTUAL-SKIN-CPU-ODPM:36110 
+03-29 18:49:21.003  4987 28188 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+03-29 18:49:21.003  4987 28188 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+03-29 18:49:21.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_input: [37983.00 37715.00 40298.00 33286.00 33375.00 33842.00 38561.00 44182.00 35500.00 1399.67 10.00 371.56 47.71 2.59 81.80 ]
+03-29 18:49:21.004  9587  9598 I native  : I0000 00:00:1774781361.004602    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:21.005  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_output: [35231.3 ]
+03-29 18:49:21.005  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: predicted_value: [35231.3 ]
+03-29 18:49:21.005  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_input: [35500.00 33375.00 40298.00 33842.00 38561.00 37715.00 37983.00 44182.00 33286.00 ]
+03-29 18:49:21.005  9587  9598 I native  : I0000 00:00:1774781361.005921    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:21.006  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_output: [34211 ]
+03-29 18:49:21.006  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: predicted_value: [34211 ]
+03-29 18:49:21.006  9587  9598 I pixel-thermal: STATS-UPDATOR:0 raw data: EXTREME-SOC-CONDITION-CHECK:0 MAIN_SOC_POWER:1755.48 MODEL_CAMERA_PWR:10.0026 MODEL_DISPLAY_PWR:371.565 MODEL_MISC_PWR:1399.67 MODEL_MODEM_PWR:47.7053 MODEL_RFFE_PWR:2.59189 MODEL_WLAN_BT_PWR:81.8038 NORTH_THERM-UNDER-THRESHOLD:1 NORTH_THERM-VSKIN-DIFF-DURING-NORTH_THERM-OVER-THRESHOLD:-997549 NORTH_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-997549 QUIET_THERM-UNDER-THRESHOLD:1 QUIET_THERM-VSKIN-DIFF-DURING-QUIET_THERM-OVER-THRESHOLD:-998395 QUIET_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998395 RFPA_THERM-UNDER-THRESHOLD:1 RFPA_THERM-VSKIN-DIFF-DURING-RFPA_THERM-OVER-THRESHOLD:-998127 RFPA_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998127 SOC_THERM-UNDER-THRESHOLD:1 SOC_THERM-VSKIN-DIFF-DURING-SOC_THERM-OVER-THRESHOLD:-991928 SOC_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-991928 STATS-UPDATOR:0 TPU_35S:0 VIRTUAL-SKIN:36110 VIRTUAL-SKIN-LEGACY:36894.7 VIRTUAL-SKIN-MODEL:36374.3 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-520.379 VIRTUAL-SKIN-ODPM-MODEL:35231.3 VIRTUAL-SKIN-SPEAKER-MODEL:34211 VSKIN-SKIN-UNDER-52:1 battery:35500 btmspkr_therm:33375 charging_therm:40298 disp_therm:33842 north_therm:38561 quiet_therm:37715 rfpa_therm:37983 soc_therm:44182 usb_pwr_therm:33286 
+03-29 18:49:21.006  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-HIGH:36.11 raw data: VIRTUAL-SKIN:36110 VIRTUAL-SKIN-CPU-HIGH:36110 
+03-29 18:49:21.006  9587  9598 I pixel-thermal: quiet_therm:37.715 raw data: quiet_therm:37715 
+03-29 18:49:21.006  9587  9598 I pixel-thermal: cellular-emergency:36.11 raw data: VIRTUAL-SKIN:36110 cellular-emergency:36110 
+03-29 18:49:22.184 31656 31656 I Finsky  : [2] SCH: job service start with id 9871.
+03-29 18:49:22.184  1580  4833 W JobScheduler: Job didn't exist in JobStore: 508e843 #u0a121/-2127835104 com.google.android.as.oss/com.google.android.gms.learning.internal.training.InAppJobService
+03-29 18:49:22.186  1580  4685 W JobScheduler: Job didn't exist in JobStore: 7412b4c #u0a121/-1269679295 com.google.android.as.oss/com.google.android.gms.learning.internal.training.InAppJobService
+03-29 18:49:22.187  1580  4764 W JobScheduler: Job didn't exist in JobStore: 50370af #u0a121/-1909303987 com.google.android.as.oss/com.google.android.gms.learning.internal.training.InAppJobService
+03-29 18:49:22.196 31656 28229 I Finsky  : [2322] SCH: Satisfied jobs for 9871 are: 12-1
+03-29 18:49:22.197 31656 28228 I Finsky  : [2321] SCH: Job 12-1 starting
+03-29 18:49:22.197 31656 31656 I Finsky  : [2] WM::SCH: Logging work start for 12-1
+03-29 18:49:22.199 31656 31656 I Finsky  : [2] [ContentSync] job started
+03-29 18:49:22.459 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.uprobestats' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.518 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.uwb' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.522 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.bt' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.523 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.widevine.nonupdatable' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.603 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.devicelock' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.643 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.apex.cts.shim' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.686 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.appsearch' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.703 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.art' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.709 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.hardware.biometrics.face' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.727 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.profiling' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.751 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.mediaprovider' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.783 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.pixel.camera.hal' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.783 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.crashrecovery' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.793 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.resolv' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.810 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.configinfrastructure' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.813 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.media' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.830  5976 23482 I gle.android.gms: Explicit concurrent mark compact GC freed 5290KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 32MB/64MB, paused 3.068ms,15.474ms total 606.297ms
+03-29 18:49:22.877 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.sdkext' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.890 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.hardware.biometrics.fingerprint.virtual' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.894 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.adservices' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.895 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.tethering' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.929  1250  1250 W TracingMuxer: type=1400 audit(0.0:619950): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1312 scontext=u:r:gxp_logging:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+03-29 18:49:22.940 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.cellbroadcast' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.944 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.pixel.wifi.ext' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:22.961 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.rkpd' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:23.069 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.pixel.euicc.update' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:23.089 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.compos' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:23.092 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.tzdata6' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:23.113 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.permission' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:23.145 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.wifi' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:23.170 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.telephonycore' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:23.451  9587  9598 I pixel-thermal: charging_therm:40.542 raw data: charging_therm:40542 
+03-29 18:49:23.453  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE:36.2245 raw data: VIRTUAL-SKIN-CHARGE:36224.5 VIRTUAL-SKIN-CHARGE-SUB-0:35745.2 VIRTUAL-SKIN-CHARGE-SUB-1:36224.5 btmspkr_therm:33353 charging_therm:40542 disp_therm:33842 north_therm:38628 quiet_therm:37871 rfpa_therm:38138 soc_therm:44365 usb_pwr_therm:33308 
+03-29 18:49:23.453  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE power_budget=3712.58 err=1.77546 s_power=2527 time_elapsed_ms=7027 p=211.279 i=1302 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=327.695 (PARTIAL_SYSTEM_POWER: 2730.79 mW, cdev_weight: 0.120000)
+03-29 18:49:23.453  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC:36.7731 raw data: VIRTUAL-SKIN-CHARGE-WLC:36773.1 charging_therm:40542 soc_therm:44365 usb_pwr_therm:33308 
+03-29 18:49:23.453  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WLC power_budget=3092.87 err=4.22693 s_power=1383 time_elapsed_ms=7027 p=900.336 i=1383 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=2 excluded power budget=573.467 (PARTIAL_SYSTEM_POWER: 2730.79 mW, cdev_weight: 0.210000)
+03-29 18:49:23.455  9587  9598 I pixel-thermal: Successfully update cdev dc_icl sysfs to 5
+03-29 18:49:23.521  9587  9598 I pixel-thermal: soc_therm:44.365 raw data: soc_therm:44365 
+03-29 18:49:23.589  9587  9598 I pixel-thermal: rfpa_therm:38.138 raw data: rfpa_therm:38138 
+03-29 18:49:23.944  1059  3044 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:49:23.968 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.media.swcodec' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:23.984  1059  3044 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:49:23.984  1059  3044 E WifiHAL : Creating message to get cached scan results
+03-29 18:49:23.987  1059  3044 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:49:24.006  1059  3044 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:49:24.006  1059  3044 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:49:24.007  1059  3044 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:49:24.007  1059  3044 D WifiHAL : len = 4, expected len = 4
+03-29 18:49:24.008  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:49:24.016  9818  9955 I .android.gms.ui: Explicit concurrent mark compact GC freed 512KB AllocSpace bytes, 0(0B) LOS objects, 82% free, 5079KB/28MB, paused 350us,4.030ms total 91.946ms
+03-29 18:49:24.019  1580  2042 D ConnectivityService: NetReassign [no changes] [c 2] [a 2] [i 6]
+03-29 18:49:24.042 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.adbd' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.069 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.i18n' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.083 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.conscrypt' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.092 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.hardware.cas' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.107 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.neuralnetworks' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.109 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.runtime' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.111 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.ipsec' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.123 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.ondevicepersonalization' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.133 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.healthfitness' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.158 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.extservices' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.158 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.virt' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.166 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.nfcservices' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.199 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.os.statsd' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.218 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.scheduling' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.224 31656 31656 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.hardware.biometrics.face.virtual' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+03-29 18:49:24.237  2332  2544 D TemperatureStateSource: sequence=42330 actualDelay=10001
+03-29 18:49:24.237  2332  2544 D TemperatureStateSource: Reading temperature: sequence=42331
+03-29 18:49:24.239  9587  9587 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:49:24.239  9587  9587 I pixel-thermal: VIRTUAL-SKIN:36.2157 raw data: VIRTUAL-SKIN:36215.7 VIRTUAL-SKIN-LEGACY:36979 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:604.703 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:36374.3 VIRTUAL-SKIN-MODEL-CLAMPED:36374.3 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-604.703 VIRTUAL-SKIN-MODEL-UPDATED:36215.7 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:36374.3 VIRTUAL-SKIN-SUB-0:36583.1 VIRTUAL-SKIN-SUB-1:35696.9 VIRTUAL-SKIN-SUB-2:36979 VIRTUAL-SKIN-SUB-3:36719.7 VIRTUAL-SKIN-SUB-4:35443.9 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery:35600 btmspkr_therm:33353 charging_therm:40542 disp_therm:33842 north_therm:38628 quiet_therm:37871 rfpa_therm:38138 soc_therm:44365 usb_pwr_therm:33308 
+03-29 18:49:24.239  2332  2544 D TemperatureStateSource: getDeviceTemperatures: sequence=42331 deviceTemperatureType=3 temperatureSource=0 temperatures=[36.215717]
+03-29 18:49:24.239  2332  2544 D BusinessScope: Enqueuing the block
+03-29 18:49:24.239  2332  2544 D TemperatureStateSource: sequence=42331 waitTime=10000
+03-29 18:49:24.239  2332  2544 D BusinessScope: Start running the #86136 block
+03-29 18:49:24.240  9587  9587 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:49:24.240  9587  9587 I pixel-thermal: VIRTUAL-SKIN:36.2157 raw data: VIRTUAL-SKIN:36215.7 
+03-29 18:49:24.240  2332  2544 I TemperatureStateSource: temperature was set
+03-29 18:49:24.241  2332  2544 D BusinessScope: Enqueuing the block
+03-29 18:49:24.241  2332  2544 D ImpulseStateSource: Notify clients: 43055
+03-29 18:49:24.241  2332  2544 D BusinessScope: Finish running the #86136 block
+03-29 18:49:24.242  2332  2544 D BusinessScope: Start running the #86137 block
+03-29 18:49:24.243  2332  2544 D BusinessScope: Finish running the #86137 block
+03-29 18:49:24.248 28784 24343 W Turbo.DeviceHealthLeversManagerImpl: applyLeversWithMaintenanceWindow: ignore the same request
+03-29 18:49:24.251 31656 31656 I Finsky  : [2] App states replicator found 48 unowned apps
+03-29 18:49:24.270 31656 31789 I Finsky  : [1803] Completed 0 account content syncs with 0 successful.
+03-29 18:49:24.270 31656 31656 I Finsky  : [2] [ContentSync] Installation state replication succeeded.
+03-29 18:49:24.270 31656 31656 I Finsky  : [2] SCH: jobFinished: 12-1. TimeElapsed: 2073ms.
+03-29 18:49:24.270 31656 31656 I Finsky  : [2] WM::SCH: Logging work end for 12-1
+03-29 18:49:24.282 31656 31772 I Finsky  : [1798] SCH: Scheduling phonesky job Id: 1-1337, CT: 1774768968162, Constraints: [{ L: 43148555, D: 86348555, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+03-29 18:49:24.282 31656 31772 I Finsky  : [1798] SCH: Scheduling phonesky job Id: 34-746, CT: 1774730320343, Constraints: [{ L: 604800000, D: 2510734913, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+03-29 18:49:24.282 31656 31772 I Finsky  : [1798] SCH: Scheduling phonesky job Id: 34-751, CT: 1774730334860, Constraints: [{ L: 604800000, D: 2591999702, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+03-29 18:49:24.282 31656 31772 I Finsky  : [1798] SCH: Scheduling phonesky job Id: 34-756, CT: 1774730334899, Constraints: [{ L: 604800000, D: 2591999554, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+03-29 18:49:24.282 31656 31772 I Finsky  : [1798] SCH: Scheduling phonesky job Id: 34-759, CT: 1774730320343, Constraints: [{ L: 79195302, D: 1375195302, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+03-29 18:49:24.287 31656 31711 I Finsky  : [1794] SCH: Scheduling 1 system job(s)
+03-29 18:49:24.287 31656 31711 I Finsky  : [1794] SCH: Scheduling system job Id: 9878, L: 28151358, D: 73952430, C: false, I: false, N: 1
+03-29 18:49:24.293 31656 28228 I Finsky  : [2321] SCH: job service finished with id 9871.
+03-29 18:49:24.298  1580  4685 W ProcessStats: Tracking association SourceState{a697838 com.android.vending/10178 ImpBg #1277258} whose proc state 6 is better than process ProcessState{d0b3f64 com.android.vending:background/10178 pkg=com.android.vending} proc state 13 (2 skipped)
+03-29 18:49:24.621  9587  9598 I pixel-thermal: disp_therm:33.842 raw data: disp_therm:33842 
+03-29 18:49:24.622  9587  9598 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB-MINUS-CHARGER:-7234 VIRTUAL-USB-UI:0 charging_therm:40542 usb_pwr_therm:33308 
+03-29 18:49:24.622  9587  9598 I pixel-thermal: btmspkr_therm:33.353 raw data: btmspkr_therm:33353 
+03-29 18:49:24.622  9587  9598 I pixel-thermal: usb_pwr_therm:33.308 raw data: usb_pwr_therm:33308 
+03-29 18:49:24.623  9587  9598 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB-MINUS-CHARGER:-7234 VIRTUAL-USB-THROTTLING:0 usb_pwr_therm:33308 
+03-29 18:49:24.971  1254  1254 D AOC     : A3:MSG: usf_vsc_log.cc, 69: VSC: [Auto Brightness] Retune sensor-0 (tout:1 drop:0): avg 2216.480 -> 2216.461 [wm:2254.
+03-29 18:49:25.384  1254  1254 D AOC     : A3:MSG: usf_vsc_log.cc, 69: VSC: [Auto Brightness] Retune sensor-3 (tout:1 drop:0): avg 2215.576 -> 2215.582 [wm:2249.
+03-29 18:49:27.013  1059  3044 I WifiHAL : Creating message to get link statistics; iface = 47
+03-29 18:49:27.052  1059  1131 I WifiHAL : Getting cached scan results, iface handle = 0xb400007a9a3254d0
+03-29 18:49:27.052  1059  1131 E WifiHAL : Creating message to get cached scan results
+03-29 18:49:27.056  1059  1131 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+03-29 18:49:27.086  1059  1131 D WifiHAL : Start debug command: mType GET_FEATURE
+03-29 18:49:27.086  1059  1131 I WifiHAL : CreateRequest mType = GET_FEATURE
+03-29 18:49:27.086  1059  1131 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+03-29 18:49:27.086  1059  1131 D WifiHAL : len = 4, expected len = 4
+03-29 18:49:27.091  4987 28188 I FusedLocation: (REDACTED) location delivery to %s blocked - too close
+03-29 18:49:27.094  1580  2035 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+03-29 18:49:27.094  4987 28188 I FusedLocation: (REDACTED) location delivery to %s blocked - too close
+03-29 18:49:27.111  4987 28188 I FusedLocation: (REDACTED) location delivery to %s blocked - too close
+03-29 18:49:27.114  1580  2042 D ConnectivityService: NetReassign [no changes] [c 12] [a 4] [i 3]
+03-29 18:49:27.140  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:49:27.140  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:49:27.141  5976  5976 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.onboardingconsent.api.ConsentManagerApiService.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsApiService }
+03-29 18:49:27.149  5976  7414 W ConsentManagerApiServic: Consent Manager API is not enabled. [CONTEXT service_id=460 ]
+03-29 18:49:27.174  4987 27833 I TFLite-in-PlayServices: Created interpreter.
+03-29 18:49:27.185  4987 27833 I SemanticLocation: (REDACTED) [Inferrer] %s%s
+03-29 18:49:27.193  1580  2088 D BackgroundInstallControlService: Package event received: 0
+03-29 18:49:27.917   505   626 I hwc-display: Display Temperature : 33°C
+03-29 18:49:28.003  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_input: [38138.00 37871.00 40542.00 33308.00 33353.00 33842.00 38628.00 44365.00 ]
+03-29 18:49:28.003  9587  9598 I native  : I0000 00:00:1774781368.003402    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:28.003  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_output: [36476.3 ]
+03-29 18:49:28.003  9587  9598 I pixel-thermal: VIRTUAL-SKIN-MODEL: predicted_value: [36476.3 ]
+03-29 18:49:28.003  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-MID:36.3199 raw data: VIRTUAL-SKIN:36319.9 VIRTUAL-SKIN-CPU-MID:36319.9 VIRTUAL-SKIN-LEGACY:36981.7 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:505.438 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:36476.3 VIRTUAL-SKIN-MODEL-CLAMPED:36476.3 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-505.438 VIRTUAL-SKIN-MODEL-UPDATED:36319.9 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:36476.3 VIRTUAL-SKIN-SUB-0:36585 VIRTUAL-SKIN-SUB-1:35710.5 VIRTUAL-SKIN-SUB-2:36981.7 VIRTUAL-SKIN-SUB-3:36724.5 VIRTUAL-SKIN-SUB-4:35477.1 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery:35700 btmspkr_therm:33353 charging_therm:40542 disp_therm:33842 north_therm:38628 quiet_therm:37871 rfpa_therm:38138 soc_therm:44365 usb_pwr_therm:33308 
+03-29 18:49:28.003  9587  9598 I pixel-thermal: north_therm:38.628 raw data: north_therm:38628 
+03-29 18:49:28.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SOC:36.3199 raw data: VIRTUAL-SKIN:36319.9 VIRTUAL-SKIN-SOC:36319.9 
+03-29 18:49:28.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN-DISPLAY:36.3199 raw data: VIRTUAL-SKIN:36319.9 VIRTUAL-SKIN-DISPLAY:36319.9 
+03-29 18:49:28.004  9587  9598 I pixel-thermal: CPU_THROTTLE_SEVERE:0 raw data: CPU_THROTTLE_SEVERE:0 
+03-29 18:49:28.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN:36.3199 raw data: VIRTUAL-SKIN:36319.9 
+03-29 18:49:28.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN-HINT:36.3199 raw data: VIRTUAL-SKIN:36319.9 VIRTUAL-SKIN-HINT:36319.9 
+03-29 18:49:28.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-LIGHT-ODPM:36.3199 raw data: VIRTUAL-SKIN:36319.9 VIRTUAL-SKIN-CPU-LIGHT-ODPM:36319.9 
+03-29 18:49:28.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-ODPM:36.3199 raw data: VIRTUAL-SKIN:36319.9 VIRTUAL-SKIN-CPU-ODPM:36319.9 
+03-29 18:49:28.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_input: [38138.00 37871.00 40542.00 33308.00 33353.00 33842.00 38628.00 44365.00 35700.00 1428.20 9.99 378.02 47.57 2.57 77.36 ]
+03-29 18:49:28.004  9587  9598 I native  : I0000 00:00:1774781368.004725    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:28.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: model_output: [35346.9 ]
+03-29 18:49:28.004  9587  9598 I pixel-thermal: VIRTUAL-SKIN-ODPM-MODEL: predicted_value: [35346.9 ]
+03-29 18:49:28.005  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_input: [35700.00 33353.00 40542.00 33842.00 38628.00 37871.00 38138.00 44365.00 33308.00 ]
+03-29 18:49:28.005  9587  9598 I native  : I0000 00:00:1774781368.005299    9598 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+03-29 18:49:28.005  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: model_output: [34127.4 ]
+03-29 18:49:28.005  9587  9598 I pixel-thermal: VIRTUAL-SKIN-SPEAKER-MODEL: predicted_value: [34127.4 ]
+03-29 18:49:28.005  9587  9598 I pixel-thermal: STATS-UPDATOR:0 raw data: EXTREME-SOC-CONDITION-CHECK:0 MAIN_SOC_POWER:1994.9 MODEL_CAMERA_PWR:9.99206 MODEL_DISPLAY_PWR:378.016 MODEL_MISC_PWR:1428.2 MODEL_MODEM_PWR:47.5733 MODEL_RFFE_PWR:2.57234 MODEL_WLAN_BT_PWR:77.3643 NORTH_THERM-UNDER-THRESHOLD:1 NORTH_THERM-VSKIN-DIFF-DURING-NORTH_THERM-OVER-THRESHOLD:-997692 NORTH_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-997692 QUIET_THERM-UNDER-THRESHOLD:1 QUIET_THERM-VSKIN-DIFF-DURING-QUIET_THERM-OVER-THRESHOLD:-998449 QUIET_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998449 RFPA_THERM-UNDER-THRESHOLD:1 RFPA_THERM-VSKIN-DIFF-DURING-RFPA_THERM-OVER-THRESHOLD:-998182 RFPA_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-998182 SOC_THERM-UNDER-THRESHOLD:1 SOC_THERM-VSKIN-DIFF-DURING-SOC_THERM-OVER-THRESHOLD:-991955 SOC_THERM-VSKIN-DIFF-DURING-VSKIN-OVER-52:-991955 STATS-UPDATOR:0 TPU_35S:0 VIRTUAL-SKIN:36319.9 VIRTUAL-SKIN-LEGACY:36981.7 VIRTUAL-SKIN-MODEL:36476.3 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-505.438 VIRTUAL-SKIN-ODPM-MODEL:35346.9 VIRTUAL-SKIN-SPEAKER-MODEL:34127.4 VSKIN-SKIN-UNDER-52:1 battery:35700 btmspkr_therm:33353 charging_therm:40542 disp_therm:33842 north_therm:38628 quiet_therm:37871 rfpa_therm:38138 soc_therm:44365 usb_pwr_therm:33308 
+03-29 18:49:28.005  9587  9598 I pixel-thermal: VIRTUAL-SKIN-CPU-HIGH:36.3199 raw data: VIRTUAL-SKIN:36319.9 VIRTUAL-SKIN-CPU-HIGH:36319.9 
+03-29 18:49:28.005  9587  9598 I pixel-thermal: quiet_therm:37.871 raw data: quiet_therm:37871 
+03-29 18:49:28.005  9587  9598 I pixel-thermal: cellular-emergency:36.3199 raw data: VIRTUAL-SKIN:36319.9 cellular-emergency:36319.9 
+03-29 18:49:28.124  4987  4987 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+03-29 18:49:28.381  1001  1001 W TracingMuxer: type=1400 audit(0.0:619951): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1312 scontext=u:r:hal_neuralnetworks_darwinn:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+03-29 18:49:28.992  4987 28242 I CastDatabase: Saving the database
+03-29 18:49:29.000  4987 28242 I SQLiteCastStore: [CastNetworkInfo] saved: 1, skipped: 0, [CastDeviceInfo]: saved 2, skipped 0, [ProbedNetworks]: saved 0, skipped: 0, [ProbedSocketAddress]: saved 1, skipped: 0, [Network-Device pairs]: saved: 2
