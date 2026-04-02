@@ -41,14 +41,35 @@ import org.maplibre.android.style.layers.PropertyFactory
 import org.maplibre.android.style.sources.GeoJsonSource
 import org.maplibre.android.style.expressions.Expression
 import android.graphics.Color
+import android.graphics.PointF
+import org.maplibre.android.camera.CameraUpdateFactory
+import org.maplibre.android.geometry.LatLng
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import kotlin.jvm.java
 
+// Compose Material 3 & Icons
+import androidx.compose.material3.*
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.DirectionsBike
+import androidx.compose.material.icons.filled.ElectricBike
+import androidx.compose.material.icons.filled.LocationOn
+import androidx.compose.material.icons.filled.Update
+import androidx.compose.foundation.layout.*
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.foundation.shape.RoundedCornerShape
+
+private const val TAG = "MyBikeDebug"
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate: App starting")
         
         // Initialize MapLibre
         MapLibre.getInstance(this)
@@ -65,19 +86,23 @@ class MainActivity : ComponentActivity() {
         // 1. 初始化 Retrofit
         val retrofit = Retrofit.Builder()
             .baseUrl("https://tcgbusfs.blob.core.windows.net/dotapp/youbike/")
-            .addConverterFactory(GsonConverterFactory.create()) // 這裡就幫你把 JSON 解析好了！
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
 
         val apiService = retrofit.create(YouBikeApiService::class.java)
 
-        // 2. 在 LifecycleScope 或 ViewModel 中呼叫
+        // 2. 在 LifecycleScope 或 ViewModel 中呼叫 (測試用)
         lifecycleScope.launch {
             try {
+                Log.d(TAG, "onCreate: Fetching sample station data...")
                 val productList = apiService.getAllStations()
-                // 這裡的 productList 已經是解析好的 List<Product> 物件了
-                Log.d("data",productList[0].id)
+                if (productList.isNotEmpty()) {
+                    Log.d(TAG, "onCreate: Sample station ID: ${productList[0].id}")
+                } else {
+                    Log.w(TAG, "onCreate: Fetched station list is empty!")
+                }
             } catch (e: Exception) {
-                e.printStackTrace()
+                Log.e(TAG, "onCreate: Error fetching sample data", e)
             }
         }
     }
@@ -159,29 +184,34 @@ interface YouBikeApiService {
 
 // 定義一個回傳 List<YouBikeStation> 的函數
 suspend fun fetchYouBikeData(): List<YouBikeStation>? {
+    Log.d(TAG, "fetchYouBikeData: Starting fetch from API")
     return try {
         val retrofit = Retrofit.Builder()
             .baseUrl("https://tcgbusfs.blob.core.windows.net/dotapp/youbike/")
-            .addConverterFactory(GsonConverterFactory.create()) // 這裡就幫你把 JSON 解析好了！
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
 
         val apiService = retrofit.create(YouBikeApiService::class.java)
 
         val productList = apiService.getAllStations()
+        Log.d(TAG, "fetchYouBikeData: Successfully fetched ${productList.size} stations")
+
+        if (productList.isNotEmpty()) {
+            val sample = productList[0]
+            Log.d(TAG, "fetchYouBikeData: Sample station: sno=${sample.id}, name=${sample.stationName}, lat=${sample.latitude}, lng=${sample.longitude}, Qty=${sample.totalBikes}")
+        }
 
         val geojson = convertToGeoJson(productList)
-        println("data: " + geojson.toString())
+        Log.d(TAG, "fetchYouBikeData: Conversion to GeoJson complete")
         
         productList
-
-
     } catch (e: Exception) {
-        // 處理錯誤 (例如：沒網路、URL 錯誤)
-        e.printStackTrace()
-        null // 失敗時回傳 null
+        Log.e(TAG, "fetchYouBikeData: Error during API call or parsing", e)
+        null
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MapScreen(modifier: Modifier = Modifier) {
     val context = LocalContext.current
@@ -196,6 +226,11 @@ fun MapScreen(modifier: Modifier = Modifier) {
     
     // Store GeoJSON data
     var geoJsonData by remember { mutableStateOf<String?>(null) }
+    
+    // Bottom Sheet state
+    var showBottomSheet by remember { mutableStateOf(false) }
+    var selectedStation by remember { mutableStateOf<YouBikeStation?>(null) }
+    val sheetState = rememberModalBottomSheetState()
 
     val permissionLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -205,7 +240,9 @@ fun MapScreen(modifier: Modifier = Modifier) {
     }
 
     LaunchedEffect(Unit) {
+        Log.d(TAG, "MapScreen: LaunchedEffect started")
         if (!hasLocationPermission) {
+            Log.d(TAG, "MapScreen: Requesting location permissions")
             permissionLauncher.launch(
                 arrayOf(
                     Manifest.permission.ACCESS_FINE_LOCATION,
@@ -217,62 +254,230 @@ fun MapScreen(modifier: Modifier = Modifier) {
         // Fetch YouBike data
         val stations = fetchYouBikeData()
         if (stations != null) {
+            Log.d(TAG, "MapScreen: Received ${stations.size} stations, updating geoJsonData state")
             val wrapper = convertToGeoJson(stations)
             geoJsonData = Gson().toJson(wrapper)
+        } else {
+            Log.w(TAG, "MapScreen: Failed to fetch stations or received null")
         }
     }
 
-    AndroidView(
-        modifier = modifier.fillMaxSize(),
-        factory = { ctx ->
-            MapView(ctx).apply {
-                onCreate(null)
-                getMapAsync { map ->
-                    // Set a more detailed style
-                    map.setStyle("https://tiles.openfreemap.org/styles/liberty") { style ->
+    Box(modifier = modifier.fillMaxSize()) {
+        AndroidView(
+            modifier = Modifier.fillMaxSize(),
+            factory = { ctx ->
+                MapView(ctx).apply {
+                    onCreate(null)
+                    getMapAsync { map ->
+                        // Set a more detailed style
+                        map.setStyle("https://tiles.openfreemap.org/styles/liberty") { style ->
+                            if (hasLocationPermission) {
+                                enableLocationComponent(context, map, style)
+                            }
+                            
+                            // Add YouBike Source and Layer if data is already available
+                            geoJsonData?.let { data ->
+                                addYouBikeLayers(style, data)
+                            }
+                        }
+                    }
+                }
+            },
+            update = { mapView ->
+                Log.d(TAG, "AndroidView.update: geoJsonData is ${if (geoJsonData == null) "NULL" else "AVAILABLE (${geoJsonData?.length} chars)"}")
+                mapView.getMapAsync { map ->
+                    map.getStyle { style ->
                         if (hasLocationPermission) {
                             enableLocationComponent(context, map, style)
                         }
                         
-                        // Add YouBike Source and Layer if data is already available
+                        // Update or add YouBike layers when data arrives
                         geoJsonData?.let { data ->
-                            addYouBikeLayers(style, data)
+                            val source = style.getSourceAs<GeoJsonSource>("youbike-source")
+                            if (source != null) {
+                                Log.d(TAG, "AndroidView.update: Updating existing youbike-source")
+                                source.setGeoJson(data)
+                            } else {
+                                Log.d(TAG, "AndroidView.update: youbike-source not found, calling addYouBikeLayers")
+                                addYouBikeLayers(style, data)
+                            }
+                        }
+
+                        // Add click listener for station selection
+                        map.addOnMapClickListener { latLng ->
+                            Log.d(TAG, "Map clicked at: $latLng")
+                            val screenPoint = map.projection.toScreenLocation(latLng)
+                            val pointF = PointF(screenPoint.x.toFloat(), screenPoint.y.toFloat())
+                            
+                            // Query all youbike layers
+                            val layers = arrayOf(
+                                "youbike-rent-large", "youbike-return-large",
+                                "youbike-rent-medium", "youbike-return-medium",
+                                "youbike-rent-small", "youbike-return-small"
+                            )
+                            
+                            val features = map.queryRenderedFeatures(pointF, *layers)
+                            Log.d(TAG, "Query features at click: found ${features.size} features")
+                            if (features.isNotEmpty()) {
+                                val properties = features[0].properties()
+                                Log.d(TAG, "Selected feature properties: $properties")
+                                properties?.let {
+                                    val station = Gson().fromJson(it, YouBikeStation::class.java)
+                                    selectedStation = station
+                                    showBottomSheet = true
+                                    
+                                    // Auto-center on station
+                                    val targetPos = org.maplibre.android.geometry.LatLng(station.latitude, station.longitude)
+                                    map.animateCamera(CameraUpdateFactory.newLatLngZoom(targetPos, 16.0), 1000)
+                                }
+                            }
+                            true
                         }
                     }
                 }
             }
-        },
-        update = { mapView ->
-            println("MapScreen update called, geoJsonData is null? ${geoJsonData == null}")
-            mapView.getMapAsync { map ->
-                map.getStyle { style ->
-                    println("MapScreen getStyle callback fired! hasLocationPermission=$hasLocationPermission")
-                    if (hasLocationPermission) {
-                        enableLocationComponent(context, map, style)
-                    }
-                    
-                    // Update or add YouBike layers when data arrives
-                    geoJsonData?.let { data ->
-                        println("MapScreen getStyle geoJsonData is present!")
-                        val source = style.getSourceAs<GeoJsonSource>("youbike-source")
-                        if (source != null) {
-                            println("MapScreen getStyle updating existing source")
-                            source.setGeoJson(data)
-                        } else {
-                            println("MapScreen getStyle calling addYouBikeLayers")
-                            addYouBikeLayers(style, data)
-                        }
-                    }
-                }
+        )
+
+        // Details Bottom Sheet
+        if (showBottomSheet && selectedStation != null) {
+            ModalBottomSheet(
+                onDismissRequest = { showBottomSheet = false },
+                sheetState = sheetState,
+                shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp),
+                dragHandle = { BottomSheetDefaults.DragHandle() },
+                containerColor = MaterialTheme.colorScheme.surface,
+            ) {
+                StationDetailContent(selectedStation!!)
+                Spacer(modifier = Modifier.height(32.dp))
             }
         }
-    )
+    }
+}
+
+@Composable
+fun StationDetailContent(station: YouBikeStation) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 24.dp, vertical = 8.dp)
+    ) {
+        // Station Name
+        Text(
+            text = station.stationName.replace("YouBike2.0_", ""),
+            style = MaterialTheme.typography.headlineSmall,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.onSurface
+        )
+        Text(
+            text = station.stationNameEn,
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+        
+        Spacer(modifier = Modifier.height(16.dp))
+        
+        // Address
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Icon(
+                Icons.Default.LocationOn,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.size(20.dp)
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text(
+                text = station.address,
+                style = MaterialTheme.typography.bodyLarge,
+                color = MaterialTheme.colorScheme.onSurface
+            )
+        }
+        
+        HorizontalDivider(modifier = Modifier.padding(vertical = 20.dp), thickness = 0.5.dp)
+        
+        // Stats Row
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            StatItem(
+                icon = Icons.AutoMirrored.Filled.DirectionsBike,
+                label = "可借車輛",
+                value = station.availableBikes.toString(),
+                color = getQuantityColorForUI(station.availableBikes)
+            )
+            StatItem(
+                icon = Icons.Filled.ElectricBike,
+                label = "可還車位",
+                value = station.availableReturns.toString(),
+                color = getQuantityColorForUI(station.availableReturns)
+            )
+            StatItem(
+                icon = Icons.Default.Update,
+                label = "總車位數",
+                value = station.totalBikes.toString(),
+                color = MaterialTheme.colorScheme.secondary
+            )
+        }
+        
+        Spacer(modifier = Modifier.height(16.dp))
+        
+        // Last Update
+        Text(
+            text = "最後更新: ${station.lastUpdate}",
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.outline,
+            modifier = Modifier.align(Alignment.End)
+        )
+    }
+}
+
+@Composable
+fun StatItem(icon: ImageVector, label: String, value: String, color: androidx.compose.ui.graphics.Color) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Box(
+            modifier = Modifier
+                .size(48.dp)
+                .padding(4.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                icon,
+                contentDescription = null,
+                tint = color,
+                modifier = Modifier.size(32.dp)
+            )
+        }
+        Text(
+            text = value,
+            style = MaterialTheme.typography.titleLarge,
+            fontWeight = FontWeight.Bold,
+            color = color
+        )
+        Text(
+            text = label,
+            style = MaterialTheme.typography.labelMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+    }
+}
+
+fun getQuantityColorForUI(quantity: Int): androidx.compose.ui.graphics.Color {
+    return when {
+        quantity <= 2 -> androidx.compose.ui.graphics.Color(0xFFE53935) // Red
+        quantity <= 4 -> androidx.compose.ui.graphics.Color(0xFFFB8C00) // Orange
+        quantity <= 9 -> androidx.compose.ui.graphics.Color(0xFFFBC02D) // Yellow
+        else -> androidx.compose.ui.graphics.Color(0xFF43A047) // Green
+    }
 }
 
 private fun addYouBikeLayers(style: Style, data: String) {
-    println("addYouBikeLayers called!")
+    Log.d(TAG, "addYouBikeLayers called! Data length: ${data.length}")
+    if (data.length > 500) {
+        Log.d(TAG, "addYouBikeLayers: GeoJSON preview: ${data.substring(0, 500)}")
+    }
+
     if (style.getSource("youbike-source") == null) {
-        println("addYouBikeLayers: source did not exist, adding it now")
+        Log.d(TAG, "addYouBikeLayers: Source 'youbike-source' does not exist, adding it now")
         style.addSource(GeoJsonSource("youbike-source", data))
 
         // 根據數量產生顏色的 Expression：0=紅, 3=橘, 5=黃, 10=綠
@@ -286,31 +491,73 @@ private fun addYouBikeLayers(style: Style, data: String) {
             )
         }
 
-        // 可借車數圖層 (左邊的點)
-        val rentLayer = CircleLayer("youbike-rent-layer", "youbike-source")
-        rentLayer.setProperties(
-            PropertyFactory.circleColor(quantityColorExpression("available_rent_bikes")),
-            PropertyFactory.circleRadius(6f),
-            PropertyFactory.circleStrokeColor(Color.WHITE),
-            PropertyFactory.circleStrokeWidth(1.5f),
-            PropertyFactory.circleTranslate(arrayOf(-5f, 0f))  // 往左偏移
-        )
-        style.addLayer(rentLayer)
+        // 建立一組可借/可還圖層，依站點規模分層顯示
+        fun addStationLayerPair(suffix: String, filter: Expression, minZoom: Float?) {
+            Log.d(TAG, "addStationLayerPair: Adding layers for scale '$suffix'")
+            val rentLayer = CircleLayer("youbike-rent-$suffix", "youbike-source")
+            rentLayer.setProperties(
+                PropertyFactory.circleColor(quantityColorExpression("available_rent_bikes")),
+                PropertyFactory.circleRadius(6f),
+                PropertyFactory.circleStrokeColor(Color.WHITE),
+                PropertyFactory.circleStrokeWidth(1.5f),
+                PropertyFactory.circleTranslate(arrayOf(-5f, 0f))
+            )
+            rentLayer.setFilter(filter)
+            minZoom?.let { rentLayer.setMinZoom(it) }
+            style.addLayer(rentLayer)
 
-        // 可還車數圖層 (右邊的點)
-        val returnLayer = CircleLayer("youbike-return-layer", "youbike-source")
-        returnLayer.setProperties(
-            PropertyFactory.circleColor(quantityColorExpression("available_return_bikes")),
-            PropertyFactory.circleRadius(6f),
-            PropertyFactory.circleStrokeColor(Color.WHITE),
-            PropertyFactory.circleStrokeWidth(1.5f),
-            PropertyFactory.circleTranslate(arrayOf(5f, 0f))   // 往右偏移
-        )
-        style.addLayer(returnLayer)
+            val returnLayer = CircleLayer("youbike-return-$suffix", "youbike-source")
+            returnLayer.setProperties(
+                PropertyFactory.circleColor(quantityColorExpression("available_return_bikes")),
+                PropertyFactory.circleRadius(6f),
+                PropertyFactory.circleStrokeColor(Color.WHITE),
+                PropertyFactory.circleStrokeWidth(1.5f),
+                PropertyFactory.circleTranslate(arrayOf(5f, 0f))
+            )
+            returnLayer.setFilter(filter)
+            minZoom?.let { returnLayer.setMinZoom(it) }
+            style.addLayer(returnLayer)
+        }
 
-        println("addYouBikeLayers: rent + return layers added to style!")
+        // 大站 (總車位 >= 60)：所有縮放等級都顯示
+        addStationLayerPair(
+            "large",
+            Expression.gte(
+                Expression.toNumber(Expression.get("Quantity")),
+                Expression.literal(60)
+            ),
+            null
+        )
+
+        // 中站 (25 <= 總車位 < 60)：zoom >= 13 才顯示
+        addStationLayerPair(
+            "medium",
+            Expression.all(
+                Expression.gte(
+                    Expression.toNumber(Expression.get("Quantity")),
+                    Expression.literal(25)
+                ),
+                Expression.lt(
+                    Expression.toNumber(Expression.get("Quantity")),
+                    Expression.literal(60)
+                )
+            ),
+            13f
+        )
+
+        // 小站 (總車位 < 25)：zoom >= 15 才顯示
+        addStationLayerPair(
+            "small",
+            Expression.lt(
+                Expression.toNumber(Expression.get("Quantity")),
+                Expression.literal(25)
+            ),
+            15f
+        )
+
+        Log.d(TAG, "addYouBikeLayers: Layers added successfully!")
     } else {
-        println("addYouBikeLayers: source already exists!")
+        Log.d(TAG, "addYouBikeLayers: Source 'youbike-source' already exists, skipping layer creation")
     }
 }
 
