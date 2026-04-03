@@ -53,16 +53,21 @@ import kotlin.jvm.java
 import androidx.compose.material3.*
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.DirectionsBike
-import androidx.compose.material.icons.filled.ElectricBike
-import androidx.compose.material.icons.filled.LocationOn
-import androidx.compose.material.icons.filled.Update
+import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.outlined.*
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.filled.Map
+import androidx.compose.material.icons.filled.PedalBike
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.outlined.LocationOn
+import androidx.compose.material3.TabRowDefaults.tabIndicatorOffset
+import androidx.compose.ui.tooling.preview.Preview
 
 private const val TAG = "MyBikeDebug"
 
@@ -78,7 +83,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MybikeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MapScreen(modifier = Modifier.padding(innerPadding))
+                    MainScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -211,6 +216,59 @@ suspend fun fetchYouBikeData(): List<YouBikeStation>? {
     }
 }
 
+object BikeColors {
+    const val DANGER = "#BA1A1A"  // 0-2台：危急紅（一眼看出沒車）
+    const val NORMAL = "#DC865A"  // 3-9台：中性灰綠（冷靜的過渡色）
+    const val PLENTY = "#006D3A"  // 10+台：活力綠（大膽放心地去借）
+}
+
+@Preview(showBackground = true)
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MainScreen(modifier: Modifier = Modifier) {
+    var state by remember {mutableStateOf(0)}
+
+    Scaffold(
+        modifier = modifier.fillMaxSize(),
+        topBar = {
+            Column() {
+                TabRow(
+                    selectedTabIndex = state,
+                    divider = {},
+                    indicator = {tabPositions ->
+                        if (state < tabPositions.size) {
+                            TabRowDefaults.PrimaryIndicator(
+                                modifier = Modifier.tabIndicatorOffset(tabPositions[state]),
+                                width = 50.dp
+
+                            )
+                        }
+
+                    }
+                ){
+                    Tab(
+                        selected = state == 0,
+                        onClick = { state = 0 },
+                        icon = { Icon(Icons.Outlined.StarOutline, contentDescription = null) },
+                        text = { Text("Favorite", fontWeight = FontWeight.Bold) }
+                    )
+                    Tab(
+                        selected = state == 1,
+                        onClick = { state = 1 },
+                        icon = { Icon(Icons.Outlined.Map, contentDescription = null) },
+                        text = { Text("Map", fontWeight = FontWeight.Bold) }
+                    )
+                }
+
+            }
+        }
+    ) { innerPadding ->
+        when (state) {
+            1 -> MapScreen(modifier = Modifier.padding(innerPadding))
+        }
+    }
+}
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MapScreen(modifier: Modifier = Modifier) {
@@ -270,7 +328,7 @@ fun MapScreen(modifier: Modifier = Modifier) {
                     onCreate(null)
                     getMapAsync { map ->
                         // Set a more detailed style
-                        map.setStyle("https://tiles.openfreemap.org/styles/liberty") { style ->
+                        map.setStyle("https://tiles.openfreemap.org/styles/positron") { style ->
                             if (hasLocationPermission) {
                                 enableLocationComponent(context, map, style)
                             }
@@ -290,7 +348,12 @@ fun MapScreen(modifier: Modifier = Modifier) {
                         if (hasLocationPermission) {
                             enableLocationComponent(context, map, style)
                         }
-                        
+                        val lastLoc = map.locationComponent.lastKnownLocation
+                        if (lastLoc != null) {
+                            val target = org.maplibre.android.geometry.LatLng(lastLoc.latitude, lastLoc.longitude)
+                            map.animateCamera(org.maplibre.android.camera.CameraUpdateFactory.newLatLngZoom(target, 15.0), 2000)
+                        }
+
                         // Update or add YouBike layers when data arrives
                         geoJsonData?.let { data ->
                             val source = style.getSourceAs<GeoJsonSource>("youbike-source")
@@ -344,12 +407,40 @@ fun MapScreen(modifier: Modifier = Modifier) {
                 onDismissRequest = { showBottomSheet = false },
                 sheetState = sheetState,
                 shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp),
-                dragHandle = { BottomSheetDefaults.DragHandle() },
+                dragHandle = { BottomSheetDefaults.DragHandle(color = MaterialTheme.colorScheme.onSurfaceVariant) },
                 containerColor = MaterialTheme.colorScheme.surface,
             ) {
                 StationDetailContent(selectedStation!!)
                 Spacer(modifier = Modifier.height(32.dp))
             }
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun StationDetailContentPreview() {
+    // 建立一個假的站點資料供預覽使用
+    val mockStation = YouBikeStation(
+        id = "500101001",
+        stationName = "YouBike2.0_捷運科技大樓站",
+        district = "大安區",
+        lastUpdate = "2024-03-20 12:00:00",
+        address = "復興南路二段235號前",
+        stationNameEn = "MRT Technology Building Sta.",
+        addressEn = "No. 235, Sec. 2, Fuxing S. Rd.",
+        totalBikes = 30,
+        availableBikes = 12,
+        availableReturns = 18,
+        latitude = 25.02605,
+        longitude = 121.5436,
+        act = "1"
+    )
+
+    MybikeTheme {
+        // 為了讓 Preview 看起來更像 BottomSheet 的寬度
+        Surface(modifier = Modifier.fillMaxWidth()) {
+            StationDetailContent(station = mockStation)
         }
     }
 }
@@ -374,12 +465,12 @@ fun StationDetailContent(station: YouBikeStation) {
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
         
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(8.dp))
         
         // Address
         Row(verticalAlignment = Alignment.CenterVertically) {
             Icon(
-                Icons.Default.LocationOn,
+                Icons.Outlined.LocationOn,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(20.dp)
@@ -391,16 +482,16 @@ fun StationDetailContent(station: YouBikeStation) {
                 color = MaterialTheme.colorScheme.onSurface
             )
         }
-        
-        HorizontalDivider(modifier = Modifier.padding(vertical = 20.dp), thickness = 0.5.dp)
+
+        Spacer(modifier = Modifier.height(32.dp))
         
         // Stats Row
         Row(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly
+            horizontalArrangement = Arrangement.SpaceBetween
         ) {
             StatItem(
-                icon = Icons.AutoMirrored.Filled.DirectionsBike,
+                icon = Icons.Filled.PedalBike,
                 label = "可借車輛",
                 value = station.availableBikes.toString(),
                 color = getQuantityColorForUI(station.availableBikes)
@@ -423,10 +514,9 @@ fun StationDetailContent(station: YouBikeStation) {
         
         // Last Update
         Text(
-            text = "最後更新: ${station.lastUpdate}",
+            text = "${station.lastUpdate}",
             style = MaterialTheme.typography.labelSmall,
-            color = MaterialTheme.colorScheme.outline,
-            modifier = Modifier.align(Alignment.End)
+            color = MaterialTheme.colorScheme.outline
         )
     }
 }
@@ -462,12 +552,12 @@ fun StatItem(icon: ImageVector, label: String, value: String, color: androidx.co
 }
 
 fun getQuantityColorForUI(quantity: Int): androidx.compose.ui.graphics.Color {
-    return when {
-        quantity <= 2 -> androidx.compose.ui.graphics.Color(0xFFE53935) // Red
-        quantity <= 4 -> androidx.compose.ui.graphics.Color(0xFFFB8C00) // Orange
-        quantity <= 9 -> androidx.compose.ui.graphics.Color(0xFFFBC02D) // Yellow
-        else -> androidx.compose.ui.graphics.Color(0xFF43A047) // Green
+    val hex = when {
+        quantity <= 2 -> BikeColors.DANGER
+        quantity <= 9 -> BikeColors.NORMAL
+        else -> BikeColors.PLENTY
     }
+    return androidx.compose.ui.graphics.Color(android.graphics.Color.parseColor(hex))
 }
 
 private fun addYouBikeLayers(style: Style, data: String) {
@@ -484,10 +574,9 @@ private fun addYouBikeLayers(style: Style, data: String) {
         fun quantityColorExpression(property: String): Expression {
             return Expression.step(
                 Expression.toNumber(Expression.get(property)),
-                Expression.color(Color.parseColor("#E53935")),  // 0: 紅色 (無車/無位)
-                Expression.stop(3, Expression.color(Color.parseColor("#FB8C00"))),   // 3: 橘色
-                Expression.stop(5, Expression.color(Color.parseColor("#FDD835"))),   // 5: 黃色
-                Expression.stop(10, Expression.color(Color.parseColor("#43A047")))   // 10+: 綠色
+                Expression.color(Color.parseColor(BikeColors.DANGER)),  // 0: 紅色 (無車/無位)
+                Expression.stop(3, Expression.color(Color.parseColor(BikeColors.NORMAL))),   // 3: 橘色
+                Expression.stop(10, Expression.color(Color.parseColor(BikeColors.PLENTY)))   // 10+: 綠色
             )
         }
 
@@ -497,7 +586,7 @@ private fun addYouBikeLayers(style: Style, data: String) {
             val rentLayer = CircleLayer("youbike-rent-$suffix", "youbike-source")
             rentLayer.setProperties(
                 PropertyFactory.circleColor(quantityColorExpression("available_rent_bikes")),
-                PropertyFactory.circleRadius(6f),
+                PropertyFactory.circleRadius(7f),
                 PropertyFactory.circleStrokeColor(Color.WHITE),
                 PropertyFactory.circleStrokeWidth(1.5f),
                 PropertyFactory.circleTranslate(arrayOf(-5f, 0f))
@@ -509,7 +598,7 @@ private fun addYouBikeLayers(style: Style, data: String) {
             val returnLayer = CircleLayer("youbike-return-$suffix", "youbike-source")
             returnLayer.setProperties(
                 PropertyFactory.circleColor(quantityColorExpression("available_return_bikes")),
-                PropertyFactory.circleRadius(6f),
+                PropertyFactory.circleRadius(7f),
                 PropertyFactory.circleStrokeColor(Color.WHITE),
                 PropertyFactory.circleStrokeWidth(1.5f),
                 PropertyFactory.circleTranslate(arrayOf(5f, 0f))
