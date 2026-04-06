@@ -69,4 +69,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
 
     implementation("androidx.compose.material:material-icons-extended:1.7.8")
+
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 }
