@@ -3,7 +3,8 @@
 MyBike 是一款基於 **Jetpack Compose** 與 **MapLibre** 開發的 Android 應用程式。旨在提供台北市 YouBike 2.0 站點的即時租借與還車資訊，透過直觀的顏色編碼與地圖分層顯示技術，優化使用者的通勤體驗。
 並解決Youbike官方App功能繁雜且無Widget功能的缺點。
 
-資料由 <a href="https://data.taipei/dataset/detail?id=c6bc8aed-557d-41d5-bfb1-8da24f78f2fb">YouBike2.0臺北市公共自行車即時資訊</a> 取得
+資料由 <a href="https://data.taipei/dataset/detail?id=c6bc8aed-557d-41d5-bfb1-8da24f78f2fb">YouBike2.0臺北市公共自行車即時資訊</a> 取得。
+將 <a href="https://github.com/tses89214/youbike-historical-data">tses89214/youbike-historical-data</a> 每個站點每日每十分鐘使用量取平均，輸出成星期一至日七個檔案，根據使用者使用當日來開啟該天的平均檔案，並做出車輛在30分鐘後邊畫的提示⬈⬊。
 
 ## **🌟 核心功能**
 
